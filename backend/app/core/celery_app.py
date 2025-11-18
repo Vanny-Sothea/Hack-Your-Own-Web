@@ -1,11 +1,16 @@
 from celery import Celery
+from celery.schedules import crontab
 from .config import Config
 
 celery_app = Celery(
     "backend_tasks",
     broker=Config.CELERY_BROKER_URL,
     backend=Config.CELERY_RESULT_BACKEND,
-    include=["app.tasks.domain_verification", "app.tasks.scan"]
+    include=[
+        "app.tasks.domain_verification", 
+        "app.tasks.scan",
+        "app.tasks.domain_verification_scheduled"
+    ]
 )
 
 celery_app.conf.update(
@@ -27,4 +32,14 @@ celery_app.conf.update(
 celery_app.conf.task_routes = {
     'app.tasks.domain_verification.*': {'queue': 'domain_verification_queue'},
     'app.tasks.scan.*': {'queue': 'scan_queue'},
-}  
+}
+
+# Scheduled (beat) tasks
+celery_app.conf.beat_schedule = {
+    "daily-domain-maintenance": {
+        "task": "app.tasks.domain_verification_scheduled.scheduled_domain_maintenance",
+        "schedule": crontab(hour=0, minute=0),  # every day at midnight
+        # "schedule": 60,  # for testing, running every 60 seconds
+        "options": {"queue": "domain_verification_queue"},
+    }
+}

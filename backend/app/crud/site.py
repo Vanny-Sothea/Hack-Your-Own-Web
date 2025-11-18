@@ -66,6 +66,51 @@ async def domain_registry_crud(data, user, session):
         )
 
 
+async def edit_domain_crud(data, user, session):
+    logger.info(f"Domain edit endpoint hit")
+    try:
+        domain_entry = (await session.execute(
+            select(Site).where(
+                Site.domain == data.domain,
+                Site.user_id == user.id
+            )
+        )).scalars().first()
+
+        if not domain_entry:
+            logger.warning(f"User {user.id} is not authorized to edit domain {data.domain}.")
+            return JSONResponse(
+                status_code=403,
+                content={"success": False, "message": "Not authorized to edit this domain."}
+            )
+
+        if (domain_entry.is_verified):
+            logger.warning(f"Domain {data.domain} is already verified and cannot be edited.")
+            return JSONResponse(
+                status_code=400,
+                content={"success": False, "message": "Verified domains cannot be edited."}
+            )
+        
+        # Edit/Update domain and update new verification token
+        domain_verification_token, expires_at = await generate_domain_verification_token()
+        domain_entry.domain = data.new_domain
+        domain_entry.verification_token = domain_verification_token
+        # domain_entry.verification_token_expires_at = expires_at
+        await session.commit()
+        logger.info(f"Domain {data.domain} edited to {data.new_domain} successfully.")
+
+        return JSONResponse(
+            status_code=200,
+            content={"success": True, "message": "Domain edited successfully.", "verificationToken": f"{AppConfig.DOMAIN_VERIFICATION_TOKEN_PREFIX}{domain_entry.verification_token}"}
+        )
+
+    except Exception as e:
+        logger.error(f"Error editing domain: {e}")
+        return JSONResponse(
+            status_code=500,
+            content={"success": False, "message": "Internal server error"}
+        )
+
+
 async def get_domain_status_crud(data, user, session):
     logger.info(f"Get domain status endpoint hit")
     try:

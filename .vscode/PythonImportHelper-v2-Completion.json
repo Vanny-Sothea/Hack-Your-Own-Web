@@ -755,11 +755,11 @@
         "documentation": {}
     },
     {
-        "label": "verify_site_ownership",
-        "importPath": "app.middleware.site_middleware",
-        "description": "app.middleware.site_middleware",
+        "label": "ValidDomainSchema",
+        "importPath": "app.schemas.site",
+        "description": "app.schemas.site",
         "isExtraImport": true,
-        "detail": "app.middleware.site_middleware",
+        "detail": "app.schemas.site",
         "documentation": {}
     },
     {
@@ -771,7 +771,7 @@
         "documentation": {}
     },
     {
-        "label": "ValidDomainSchema",
+        "label": "EditDomainSchema",
         "importPath": "app.schemas.site",
         "description": "app.schemas.site",
         "isExtraImport": true,
@@ -828,6 +828,14 @@
     },
     {
         "label": "remove_domain_crud",
+        "importPath": "app.crud.site",
+        "description": "app.crud.site",
+        "isExtraImport": true,
+        "detail": "app.crud.site",
+        "documentation": {}
+    },
+    {
+        "label": "edit_domain_crud",
         "importPath": "app.crud.site",
         "description": "app.crud.site",
         "isExtraImport": true,
@@ -1503,7 +1511,7 @@
         "kind": 5,
         "importPath": "backend.app.api.v1.site",
         "description": "backend.app.api.v1.site",
-        "peekOfCode": "router = APIRouter()\nsite_router = router\n@router.get(\"/\")\nasync def get_list_user_domains(user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    return await get_list_user_domains_crud(user, session)\n@router.post(\"/\")\nasync def register_domain(data: ValidDomainSchema, user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    return await domain_registry_crud(data, user, session)\n@router.get(\"/status\")\nasync def get_domain_status(domain: ValidDomainSchema, user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):",
+        "peekOfCode": "router = APIRouter()\nsite_router = router\n@router.get(\"/\")\nasync def get_list_user_domains(user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    return await get_list_user_domains_crud(user, session)\n@router.post(\"/register\")\nasync def register_domain(data: ValidDomainSchema, user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    return await domain_registry_crud(data, user, session)\n@router.get(\"/status\")\nasync def get_domain_status(domain: ValidDomainSchema, user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):",
         "detail": "backend.app.api.v1.site",
         "documentation": {}
     },
@@ -1512,7 +1520,7 @@
         "kind": 5,
         "importPath": "backend.app.api.v1.site",
         "description": "backend.app.api.v1.site",
-        "peekOfCode": "site_router = router\n@router.get(\"/\")\nasync def get_list_user_domains(user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    return await get_list_user_domains_crud(user, session)\n@router.post(\"/\")\nasync def register_domain(data: ValidDomainSchema, user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    return await domain_registry_crud(data, user, session)\n@router.get(\"/status\")\nasync def get_domain_status(domain: ValidDomainSchema, user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    return await get_domain_status_crud(domain, user, session)",
+        "peekOfCode": "site_router = router\n@router.get(\"/\")\nasync def get_list_user_domains(user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    return await get_list_user_domains_crud(user, session)\n@router.post(\"/register\")\nasync def register_domain(data: ValidDomainSchema, user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    return await domain_registry_crud(data, user, session)\n@router.get(\"/status\")\nasync def get_domain_status(domain: ValidDomainSchema, user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    return await get_domain_status_crud(domain, user, session)",
         "detail": "backend.app.api.v1.site",
         "documentation": {}
     },
@@ -1737,7 +1745,16 @@
         "kind": 6,
         "importPath": "backend.app.schemas.site",
         "description": "backend.app.schemas.site",
-        "peekOfCode": "class ValidDomainSchema(BaseModel):\n    domain: str = Field(..., description=\"The URL of the site to scan\")\n    @validator('domain')\n    def validate_domain(cls, v):\n        # Basic domain regex: allows subdomains, letters, numbers, hyphens, and TLDs\n        pattern = r\"^(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}$\"\n        if not re.match(pattern, v):\n            raise ValueError(\"Invalid domain format\")\n        return v",
+        "peekOfCode": "class ValidDomainSchema(BaseModel):\n    domain: str = Field(..., description=\"The URL of the site to scan\")\n    @validator('domain')\n    def validate_domain(cls, v):\n        # Basic domain regex: allows subdomains, letters, numbers, hyphens, and TLDs\n        pattern = r\"^(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}$\"\n        if not re.match(pattern, v):\n            raise ValueError(\"Invalid domain format\")\n        return v\nclass EditDomainSchema(BaseModel):",
+        "detail": "backend.app.schemas.site",
+        "documentation": {}
+    },
+    {
+        "label": "EditDomainSchema",
+        "kind": 6,
+        "importPath": "backend.app.schemas.site",
+        "description": "backend.app.schemas.site",
+        "peekOfCode": "class EditDomainSchema(BaseModel):\n    domain: str = Field(..., description=\"The new URL of the site to scan\")\n    new_domain: str = Field(..., description=\"The new URL of the site to scan\")\n    @validator('domain', 'new_domain')\n    def validate_domain(cls, v):\n        # Basic domain regex: allows subdomains, letters, numbers, hyphens, and TLDs\n        pattern = r\"^(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}$\"\n        if not re.match(pattern, v):\n            raise ValueError(\"Invalid domain format\")\n        return v",
         "detail": "backend.app.schemas.site",
         "documentation": {}
     },

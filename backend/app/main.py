@@ -32,7 +32,6 @@ app.include_router(auth_router, prefix=f"/api/{version}/auth", tags=["auth"])
 app.include_router(site_router, prefix=f"/api/{version}/site", tags=["site"])
 app.include_router(scan_router, prefix=f"/api/{version}/scan", tags=["scan"])
 
-
 @app.on_event("startup")
 async def startup_event():
     try:
