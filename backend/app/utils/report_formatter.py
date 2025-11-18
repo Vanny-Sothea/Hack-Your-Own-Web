@@ -309,7 +309,12 @@ class ZAPReportFormatter:
         return grouped
 
     @staticmethod
-    def format_scan_to_categorized_report(scan: Scan, alerts: List[ScanAlert]) -> Dict[str, Any]:
+    def format_scan_to_categorized_report(
+        scan: Scan, 
+        alerts: List[ScanAlert],
+        include_details: bool = True,
+        max_issues_per_category: int = 100
+    ) -> Dict[str, Any]:
         """
         Convert scan to categorized report with pass/fail status for each vulnerability type
 
@@ -322,6 +327,8 @@ class ZAPReportFormatter:
         Args:
             scan: Scan database model instance
             alerts: List of ScanAlert instances
+            include_details: Include full issue details in response (default: True)
+            max_issues_per_category: Maximum number of issues per category (default: 100)
 
         Returns:
             Dictionary with categorized vulnerabilities and pass/fail status
@@ -329,7 +336,10 @@ class ZAPReportFormatter:
         from urllib.parse import urlparse
         from app.models.scan import ScanType
 
-        logger.info(f"Formatting scan {scan.id} to categorized report with pass/fail status")
+        logger.info(
+            f"Formatting scan {scan.id} to categorized report with pass/fail status "
+            f"(include_details={include_details}, max_issues={max_issues_per_category})"
+        )
 
         parsed_url = urlparse(str(scan.target_url))
         # Convert scan_type to actual value to avoid SQLAlchemy ColumnElement boolean issues
@@ -483,39 +493,55 @@ class ZAPReportFormatter:
 
             # Format alerts for this category
             formatted_alerts = []
-            for alert in category_alerts:
-                formatted_alerts.append({
-                    "id": alert.id,
-                    "name": alert.alert_name,
-                    "riskLevel": alert.risk_level.value,
-                    "confidence": alert.confidence,
-                    "url": alert.url,
-                    "method": alert.method or "GET",
-                    "param": alert.param,
-                    "attack": alert.attack,
-                    "evidence": alert.evidence,
-                    "description": alert.description,
-                    "solution": alert.solution,
-                    "reference": alert.reference,
-                    "cweId": alert.cwe_id,
-                    "wascId": alert.wasc_id,
-                    "otherInfo": alert.other_info,
-                    "createdAt": cast(datetime, alert.created_at).isoformat() if alert.created_at is not None else None
-                })
+            total_alerts_in_category = len(category_alerts)
+            alerts_to_include = category_alerts[:max_issues_per_category] if include_details else []
+            
+            if include_details:
+                for alert in alerts_to_include:
+                    formatted_alert = {
+                        "id": alert.id,
+                        "name": alert.alert_name,
+                        "riskLevel": alert.risk_level.value,
+                        "confidence": alert.confidence,
+                        "url": alert.url,
+                        "method": alert.method or "GET",
+                        "param": alert.param,
+                        "cweId": alert.cwe_id,
+                        "wascId": alert.wasc_id
+                    }
+                    # Add full details (can be large)
+                    formatted_alert.update({
+                        "attack": alert.attack,
+                        "evidence": alert.evidence,
+                        "description": alert.description,
+                        "solution": alert.solution,
+                        "reference": alert.reference,
+                        "otherInfo": alert.other_info,
+                        "createdAt": cast(datetime, alert.created_at).isoformat() if alert.created_at is not None else None
+                    })
+                    formatted_alerts.append(formatted_alert)
 
-            vulnerability_tests[category_key] = {
+            test_result = {
                 "testName": category["name"],
                 "description": category["description"],
                 "status": status,
                 "passed": passed,
                 "tested": True,
-                "totalIssues": len(category_alerts),
+                "totalIssues": total_alerts_in_category,
                 "highRisk": high_risk_count,
                 "mediumRisk": medium_risk_count,
                 "lowRisk": low_risk_count,
-                "informational": info_count,
-                "issues": formatted_alerts
+                "informational": info_count
             }
+            
+            if include_details:
+                test_result["issues"] = formatted_alerts
+                if total_alerts_in_category > max_issues_per_category:
+                    test_result["issuesTruncated"] = True
+                    test_result["issuesShown"] = len(formatted_alerts)
+                    test_result["issuesTotal"] = total_alerts_in_category
+            
+            vulnerability_tests[category_key] = test_result
 
         # Format other/uncategorized alerts
         other_alerts = []
@@ -523,27 +549,9 @@ class ZAPReportFormatter:
         other_medium = 0
         other_low = 0
         other_info = 0
-
+        
+        # Count risk levels first
         for alert in uncategorized_alerts:
-            other_alerts.append({
-                "id": alert.id,
-                "name": alert.alert_name,
-                "riskLevel": alert.risk_level.value,
-                "confidence": alert.confidence,
-                "url": alert.url,
-                "method": alert.method or "GET",
-                "param": alert.param,
-                "attack": alert.attack,
-                "evidence": alert.evidence,
-                "description": alert.description,
-                "solution": alert.solution,
-                "reference": alert.reference,
-                "cweId": alert.cwe_id,
-                "wascId": alert.wasc_id,
-                "otherInfo": alert.other_info,
-                "createdAt": cast(datetime, alert.created_at).isoformat() if alert.created_at is not None else None
-            })
-
             risk = alert.risk_level.value
             if risk == "high":
                 other_high += 1
@@ -553,6 +561,35 @@ class ZAPReportFormatter:
                 other_low += 1
             else:
                 other_info += 1
+        
+        # Format alerts if details requested
+        total_other_alerts = len(uncategorized_alerts)
+        other_alerts_to_include = uncategorized_alerts[:max_issues_per_category] if include_details else []
+        
+        if include_details:
+            for alert in other_alerts_to_include:
+                formatted_alert = {
+                    "id": alert.id,
+                    "name": alert.alert_name,
+                    "riskLevel": alert.risk_level.value,
+                    "confidence": alert.confidence,
+                    "url": alert.url,
+                    "method": alert.method or "GET",
+                    "param": alert.param,
+                    "cweId": alert.cwe_id,
+                    "wascId": alert.wasc_id
+                }
+                # Add full details
+                formatted_alert.update({
+                    "attack": alert.attack,
+                    "evidence": alert.evidence,
+                    "description": alert.description,
+                    "solution": alert.solution,
+                    "reference": alert.reference,
+                    "otherInfo": alert.other_info,
+                    "createdAt": cast(datetime, alert.created_at).isoformat() if alert.created_at is not None else None
+                })
+                other_alerts.append(formatted_alert)
 
         # Calculate overall status (only consider tests that were actually performed)
         tested_results = [test for test in vulnerability_tests.values() if test.get("tested", True)]
@@ -587,12 +624,14 @@ class ZAPReportFormatter:
             },
             "vulnerabilityTests": vulnerability_tests,
             "otherVulnerabilities": {
-                "totalIssues": len(uncategorized_alerts),
+                "totalIssues": total_other_alerts,
                 "highRisk": other_high,
                 "mediumRisk": other_medium,
                 "lowRisk": other_low,
                 "informational": other_info,
-                "issues": other_alerts
+                **({"issues": other_alerts} if include_details else {}),
+                **({"issuesTruncated": True, "issuesShown": len(other_alerts), "issuesTotal": total_other_alerts} 
+                   if include_details and total_other_alerts > max_issues_per_category else {})
             },
             "site": {
                 "host": parsed_url.hostname or "unknown",

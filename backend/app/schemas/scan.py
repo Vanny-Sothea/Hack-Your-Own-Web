@@ -143,3 +143,69 @@ class ScanStatsResponse(BaseModel):
     high_risk_vulnerabilities: int
     medium_risk_vulnerabilities: int
     low_risk_vulnerabilities: int
+
+
+# ====== ANONYMOUS SCAN SCHEMAS (No Auth Required) ======
+
+class AnonymousScanCreate(BaseModel):
+    """Request schema for anonymous basic scan (no authentication required)"""
+    target_url: HttpUrl = Field(..., description="The target URL to scan")
+
+    @validator('target_url')
+    def validate_url(cls, v):
+        url_str = str(v)
+        if not url_str.startswith(('http://', 'https://')):
+            raise ValueError('URL must start with http:// or https://')
+        return url_str
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "target_url": "https://example.com"
+            }
+        }
+
+
+class AnonymousAlertResponse(BaseModel):
+    """Alert response for anonymous scans"""
+    alert_name: str
+    risk_level: RiskLevel
+    confidence: str
+    description: Optional[str] = None
+    solution: Optional[str] = None
+    reference: Optional[str] = None
+    cwe_id: Optional[str] = None
+    wasc_id: Optional[str] = None
+    url: str
+    method: Optional[str] = None
+    param: Optional[str] = None
+    attack: Optional[str] = None
+    evidence: Optional[str] = None
+    other_info: Optional[str] = None
+
+
+class AnonymousScanResponse(BaseModel):
+    """Response schema for anonymous scan results"""
+    success: bool
+    message: str
+    scan_data: Dict[str, Any] = Field(..., description="Scan results and metadata")
+    
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "success": True,
+                "message": "Scan completed successfully",
+                "scan_data": {
+                    "target_url": "https://example.com",
+                    "scan_type": "basic",
+                    "scan_duration_seconds": 45.2,
+                    "total_alerts": 12,
+                    "high_risk_count": 2,
+                    "medium_risk_count": 5,
+                    "low_risk_count": 3,
+                    "info_count": 2,
+                    "alerts": [],
+                    "completed_at": "2025-11-18T10:30:00Z"
+                }
+            }
+        }

@@ -10,6 +10,8 @@ from app.schemas.scan import (
     ScanFullDetailResponse,
     ScanListResponse,
     ScanStatsResponse,
+    AnonymousScanCreate,
+    AnonymousScanResponse,
 )
 from app.schemas.site import ValidDomainSchema
 from app.models.scan import ScanStatus, ScanType
@@ -28,11 +30,96 @@ from app.crud.scan import (
 )
 from app.middleware.auth_middleware import get_current_user
 from app.middleware.site_middleware import verify_site_ownership
+from app.services.anonymous_scanner import AnonymousScannerService
 from fastapi.responses import JSONResponse, Response
 import json
 
 
 router = APIRouter()
+
+
+@router.post("/anonymous", status_code=status.HTTP_200_OK, response_model=AnonymousScanResponse)
+async def create_anonymous_scan(data: AnonymousScanCreate):
+    """
+    Run an anonymous basic security scan (NO AUTHENTICATION REQUIRED)
+
+    This endpoint allows anyone to perform a basic security scan without creating an account.
+    Perfect for landing pages where users want to try the scanner before signing up.
+
+    **Features:**
+    - No authentication required
+    - No signup needed
+    - Results returned immediately (synchronous)
+    - No data stored in database
+    - Basic scan only (Spider + Passive)
+
+    **What it scans for:**
+    - HTTP Security Headers (CSP, HSTS, X-Frame-Options, etc.)
+    - SSL/TLS Configuration Issues
+    - Cookie Security (HttpOnly, Secure, SameSite flags)
+    - Information Disclosure (Server banners, error messages, comments)
+    - Open Redirects
+    - Authentication/Session Management Issues
+    - And more passive vulnerabilities
+
+    **Limitations:**
+    - Basic scan only (no active testing)
+    - No scan history (results not saved)
+    - May take 30-90 seconds to complete
+    - Single scan at a time per request
+
+    **Note:** For advanced features like active scanning, scan history, and reports,
+    please create an account and use the authenticated endpoints.
+
+    - **target_url**: The URL to scan (must be http:// or https://)
+
+    Returns:
+    - **200**: Scan completed successfully with results
+    - **400**: Invalid URL format or scan error
+    - **500**: Internal server error
+    """
+    try:
+        # Run the scan (this will block until complete)
+        scan_result = await AnonymousScannerService.run_anonymous_scan(str(data.target_url))
+        
+        # Check if scan had errors
+        if "error" in scan_result:
+            return JSONResponse(
+                status_code=400,
+                content={
+                    "success": False,
+                    "message": f"Scan failed: {scan_result['error']}",
+                    "scan_data": scan_result
+                }
+            )
+        
+        # Return successful result
+        return JSONResponse(
+            status_code=200,
+            content={
+                "success": True,
+                "message": "Scan completed successfully",
+                "scan_data": scan_result
+            }
+        )
+        
+    except Exception as e:
+        # Log the error
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.error(f"Anonymous scan endpoint error: {e}")
+        
+        return JSONResponse(
+            status_code=500,
+            content={
+                "success": False,
+                "message": "Internal server error occurred during scan",
+                "scan_data": {
+                    "target_url": str(data.target_url),
+                    "error": str(e)
+                }
+            }
+        )
 
 
 @router.post("/basic", status_code=status.HTTP_201_CREATED)
@@ -297,6 +384,8 @@ async def get_scan_report_frontend(
 @router.get("/{scan_id}/report/categorized")
 async def get_scan_report_categorized(
     scan_id: int,
+    include_details: bool = True,
+    max_issues_per_category: int = 100,
     user: User = Depends(get_current_user),
     session: AsyncSession = Depends(get_session)
 ):
@@ -304,6 +393,8 @@ async def get_scan_report_categorized(
     Get scan report with categorized vulnerabilities and pass/fail status (BEST for Users)
 
     - **scan_id**: The ID of the scan
+    - **include_details**: Include full issue details (default: true). Set to false for summary only.
+    - **max_issues_per_category**: Maximum issues to return per category (default: 100, max: 1000)
     - Returns JSON with clear pass/fail status for each vulnerability type
     - Only available for completed scans
     - Works for both BASIC and FULL scan types
@@ -321,12 +412,27 @@ async def get_scan_report_categorized(
     Each vulnerability test shows:
     - Pass/Fail status
     - Number of issues (high/medium/low/informational)
-    - Detailed list of specific vulnerabilities found
+    - Detailed list of specific vulnerabilities found (if include_details=true)
     - Solutions and references for remediation
+
+    **Performance Tips:**
+    - For large reports in Swagger UI, use include_details=false to avoid browser crashes
+    - Use max_issues_per_category to limit response size
+    - For full details, download the report directly via API client
 
     Perfect for security dashboards and reporting!
     """
-    report = await get_scan_report_categorized_crud(scan_id, user.id, session)  # type: ignore[arg-type]
+    # Validate max_issues_per_category
+    if max_issues_per_category > 1000:
+        max_issues_per_category = 1000
+    elif max_issues_per_category < 1:
+        max_issues_per_category = 1
+
+    report = await get_scan_report_categorized_crud(
+        scan_id, user.id, session, 
+        include_details=include_details,
+        max_issues_per_category=max_issues_per_category
+    )  # type: ignore[arg-type]
 
     if not report:
         return JSONResponse(

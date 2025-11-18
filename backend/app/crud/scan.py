@@ -546,7 +546,9 @@ async def get_scan_report_frontend_json_crud(
 async def get_scan_report_categorized_crud(
     scan_id: int,
     user_id: int,
-    session: AsyncSession
+    session: AsyncSession,
+    include_details: bool = True,
+    max_issues_per_category: int = 100
 ) -> Optional[Dict[str, Any]]:
     """
     Generate categorized report with pass/fail status for vulnerability types
@@ -561,6 +563,8 @@ async def get_scan_report_categorized_crud(
         scan_id: Scan ID
         user_id: User ID (for ownership verification)
         session: Database session
+        include_details: Include full issue details in response
+        max_issues_per_category: Maximum number of issues to include per category
 
     Returns:
         Dictionary with categorized vulnerabilities and pass/fail status, or None if scan not found
@@ -584,7 +588,12 @@ async def get_scan_report_categorized_crud(
             return None
 
         # Format scan to categorized report
-        report = ZAPReportFormatter.format_scan_to_categorized_report(scan, scan.alerts)
+        report = ZAPReportFormatter.format_scan_to_categorized_report(
+            scan, 
+            scan.alerts,
+            include_details=include_details,
+            max_issues_per_category=max_issues_per_category
+        )
 
         logger.info(f"Successfully generated categorized report for scan {scan_id}")
         return report
