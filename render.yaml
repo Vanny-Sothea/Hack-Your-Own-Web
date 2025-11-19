@@ -113,7 +113,7 @@ services:
     autoDeploy: true
     envVars:
       - key: WORKER_TYPE
-          value: "scan_worker"
+        value: "scan_worker"
       - key: DATABASE_URL
         value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
       - key: CELERY_BROKER_URL
