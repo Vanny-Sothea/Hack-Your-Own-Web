@@ -77,7 +77,7 @@ services:
 
   # Celery Worker - Domain Verification Queue
   celery_domain_worker:
-    image: hyow-backend:latest
+    build: .
     container_name: hyow-celery-domain
     env_file: .env
     command: celery -A app.core.celery_app worker -Q domain_verification_queue --loglevel=info --concurrency=2 -n domain_worker@%h -E
@@ -97,7 +97,7 @@ services:
 
   # Celery Worker - Scan Queue
   celery_scan_worker:
-    image: hyow-backend:latest
+    build: .
     container_name: hyow-celery-scan
     env_file: .env
     command: celery -A app.core.celery_app worker -Q scan_queue --loglevel=info --concurrency=3 -n scan_worker@%h -E
@@ -119,7 +119,7 @@ services:
 
   # Celery Beat - Scheduled Tasks
   celery_beat:
-    image: hyow-backend:latest
+    build: .
     container_name: hyow-celery-beat
     env_file: .env
     command: celery -A app.core.celery_app beat --loglevel=info
@@ -134,7 +134,7 @@ services:
 
   # Flower - Celery Monitoring UI
   flower:
-    image: hyow-backend:latest
+    build: .
     container_name: hyow-flower
     env_file: .env
     environment:
