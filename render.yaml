@@ -1,31 +1,28 @@
 services:
-  - type: service
-    name: redis
-    env: docker
-    image: redis:7-alpine
-    branch: main
+  - type: redis
+    name: angkoro-redis
     plan: free
-    description: Redis for Celery broker/result backend (from docker-compose)
-    envVars: []
+    ipAllowList:
+      - source: 0.0.0.0/0
 
-  - type: service
-    name: zap
+  - type: web
+    name: hyow-zap
     env: docker
     image: ghcr.io/zaproxy/zaproxy:stable
     branch: main
     plan: free
-    description: OWASP ZAP scanner (daemon)
+    description: "OWASP ZAP daemon for application scans"
     startCommand: >
-      zap.sh -daemon -host 0.0.0.0 -port 8090 -Xmx6g
-      -config api.key=15d12de6-553b-4af7-bd5c-22599f8876f2
+      zap.sh -daemon -host 0.0.0.0 -port $PORT -Xmx6g
+      -config api.key=$ZAP_API_KEY
       -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
-      -config api.disablekey=false -addonupdate -addoninstall pscanrules -addoninstall ascanrules
+      -config api.disablekey=false
+      -addonupdate -addoninstall pscanrules -addoninstall ascanrules
     envVars:
       - key: ZAP_API_KEY
         value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
-        secure: true
 
-  - type: web_service
+  - type: web
     name: hyow-api
     env: docker
     dockerfilePath: backend/Dockerfile
@@ -33,6 +30,7 @@ services:
     # health check will hit FastAPI health route
     healthCheckPath: /api/v1/health
     autoDeploy: true
+    description: "HYOW backend API (FastAPI)"
     plan: free
     envVars:
       - key: ENV
@@ -41,19 +39,22 @@ services:
         value: "Hack Your Own Web"
       - key: DATABASE_URL
         value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
-        secure: true
-      - key: CELERY_BROKER_URL
-        value: "redis://redis:6379/0"
-        secure: true
-      - key: CELERY_RESULT_BACKEND
-        value: "redis://redis:6379/0"
-        secure: true
       - key: REDIS_URL
-        value: "redis://redis:6379/0"
-        secure: true
+      # pull connection string from the managed Redis service created above
+        fromDatabase:
+          name: angkoro-redis
+          property: connectionString
+      - key: CELERY_BROKER_URL
+      # Celery broker/result backend will use the same Redis connection string
+        fromDatabase:
+          name: angkoro-redis
+          property: connectionString
+      - key: CELERY_RESULT_BACKEND
+        fromDatabase:
+          name: angkoro-redis
+          property: connectionString
       - key: JWT_SECRET
         value: "uB8D8T4ic5027Qc7ldl68M6f+C60PaKfMI8MlBnZzzaCcZXK7mwsXSracY0EzmWQ"
-        secure: true
       - key: JWT_ALGORITHM
         value: "HS256"
       - key: ACCESS_TOKEN_EXPIRE_MINUTES
@@ -62,10 +63,8 @@ services:
         value: "18"
       - key: MAIL_USERNAME
         value: "open.source.user.authentication@gmail.com"
-        secure: true
       - key: MAIL_PASSWORD
         value: "avvx yapu kbko nbzg"
-        secure: true
       - key: MAIL_FROM
         value: "open.source.user.authentication@gmail.com"
       - key: MAIL_FROM_NAME
@@ -82,13 +81,13 @@ services:
         value: "True"
       - key: USE_CREDENTIALS
         value: "True"
-      - key: ZAP_HOST
-        value: "zap"
-      - key: ZAP_PORT
-        value: "8090"
+      - key: ZAP_URL
+        # Point to the ZAP service using the Render-assigned hostname and port
+        value: "http://hyow-zap.onrender.com:$PORT"
       - key: ZAP_API_KEY
         value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
-        secure: true
+      - key: DOMAIN_VERIFICATION_TOKEN_PREFIX
+        value: "hackyourownweb-verify="
       - key: USE_DOCKER_ZAP
         value: "False"
       - key: ZAP_DOCKER_IMAGE
@@ -115,13 +114,18 @@ services:
     envVars:
       - key: DATABASE_URL
         value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
-        secure: true
       - key: CELERY_BROKER_URL
-        value: "redis://redis:6379/0"
-        secure: true
+        fromDatabase:
+          name: angkoro-redis
+          property: connectionString
       - key: CELERY_RESULT_BACKEND
-        value: "redis://redis:6379/0"
-        secure: true
+        fromDatabase:
+          name: angkoro-redis
+          property: connectionString
+      - key: ZAP_URL
+        value: "http://hyow-zap.onrender.com:$PORT"
+      - key: ZAP_API_KEY
+        value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
 
   - type: worker
     name: celery_scan_worker
@@ -134,13 +138,18 @@ services:
     envVars:
       - key: DATABASE_URL
         value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
-        secure: true
       - key: CELERY_BROKER_URL
-        value: "redis://redis:6379/0"
-        secure: true
+        fromDatabase:
+          name: angkoro-redis
+          property: connectionString
       - key: CELERY_RESULT_BACKEND
-        value: "redis://redis:6379/0"
-        secure: true
+        fromDatabase:
+          name: angkoro-redis
+          property: connectionString
+      - key: ZAP_URL
+        value: "http://hyow-zap.onrender.com:$PORT"
+      - key: ZAP_API_KEY
+        value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
 
   - type: worker
     name: celery_beat
@@ -153,10 +162,15 @@ services:
     envVars:
       - key: DATABASE_URL
         value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
-        secure: true
       - key: CELERY_BROKER_URL
-        value: "redis://redis:6379/0"
-        secure: true
+        fromDatabase:
+          name: angkoro-redis
+          property: connectionString
       - key: CELERY_RESULT_BACKEND
-        value: "redis://redis:6379/0"
-        secure: true
+        fromDatabase:
+          name: angkoro-redis
+          property: connectionString
+      - key: ZAP_URL
+        value: "http://hyow-zap.onrender.com:$PORT"
+      - key: ZAP_API_KEY
+        value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
