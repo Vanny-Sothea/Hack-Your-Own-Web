@@ -8,6 +8,7 @@ services:
   - type: web
     name: hyow-api
     env: docker
+    dockerContext: ./backend
     dockerfilePath: backend/Dockerfile
     branch: main
     # health check will hit FastAPI health route
