@@ -1,0 +1,162 @@
+services:
+  - type: service
+    name: redis
+    env: docker
+    image: redis:7-alpine
+    branch: main
+    plan: free
+    description: Redis for Celery broker/result backend (from docker-compose)
+    envVars: []
+
+  - type: service
+    name: zap
+    env: docker
+    image: ghcr.io/zaproxy/zaproxy:stable
+    branch: main
+    plan: free
+    description: OWASP ZAP scanner (daemon)
+    startCommand: >
+      zap.sh -daemon -host 0.0.0.0 -port 8090 -Xmx6g
+      -config api.key=15d12de6-553b-4af7-bd5c-22599f8876f2
+      -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
+      -config api.disablekey=false -addonupdate -addoninstall pscanrules -addoninstall ascanrules
+    envVars:
+      - key: ZAP_API_KEY
+        value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
+        secure: true
+
+  - type: web_service
+    name: hyow-api
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    branch: main
+    # health check will hit FastAPI health route
+    healthCheckPath: /api/v1/health
+    autoDeploy: true
+    plan: free
+    envVars:
+      - key: ENV
+        value: "development"
+      - key: APP_NAME
+        value: "Hack Your Own Web"
+      - key: DATABASE_URL
+        value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
+        secure: true
+      - key: CELERY_BROKER_URL
+        value: "redis://redis:6379/0"
+        secure: true
+      - key: CELERY_RESULT_BACKEND
+        value: "redis://redis:6379/0"
+        secure: true
+      - key: REDIS_URL
+        value: "redis://redis:6379/0"
+        secure: true
+      - key: JWT_SECRET
+        value: "uB8D8T4ic5027Qc7ldl68M6f+C60PaKfMI8MlBnZzzaCcZXK7mwsXSracY0EzmWQ"
+        secure: true
+      - key: JWT_ALGORITHM
+        value: "HS256"
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "30"
+      - key: REFRESH_TOKEN_EXPIRE_DAYS
+        value: "18"
+      - key: MAIL_USERNAME
+        value: "open.source.user.authentication@gmail.com"
+        secure: true
+      - key: MAIL_PASSWORD
+        value: "avvx yapu kbko nbzg"
+        secure: true
+      - key: MAIL_FROM
+        value: "open.source.user.authentication@gmail.com"
+      - key: MAIL_FROM_NAME
+        value: "no-reply"
+      - key: MAIL_PORT
+        value: "587"
+      - key: MAIL_SERVER
+        value: "smtp.gmail.com"
+      - key: MAIL_STARTTLS
+        value: "True"
+      - key: MAIL_SSL_TLS
+        value: "False"
+      - key: MAIL_DEBUG
+        value: "True"
+      - key: USE_CREDENTIALS
+        value: "True"
+      - key: ZAP_HOST
+        value: "zap"
+      - key: ZAP_PORT
+        value: "8090"
+      - key: ZAP_API_KEY
+        value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
+        secure: true
+      - key: USE_DOCKER_ZAP
+        value: "False"
+      - key: ZAP_DOCKER_IMAGE
+        value: "ghcr.io/zaproxy/zaproxy:stable"
+      - key: ZAP_PASSIVE_SCAN_TIMEOUT
+        value: "600"
+      - key: ZAP_SPIDER_TIMEOUT
+        value: "300"
+      - key: ZAP_SPIDER_MAX_DURATION
+        value: "5"
+      - key: ZAP_ACTIVE_SCAN_TIMEOUT
+        value: "1800"
+      - key: DOMAIN_VERIFICATION_TOKEN_PREFIX
+        value: "hackyourownweb-verify="
+
+  - type: worker
+    name: celery_domain_worker
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    branch: main
+    plan: free
+    startCommand: celery -A app.core.celery_app worker -Q domain_verification_queue --loglevel=info --concurrency=2 -n domain_worker@%h -E
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
+        secure: true
+      - key: CELERY_BROKER_URL
+        value: "redis://redis:6379/0"
+        secure: true
+      - key: CELERY_RESULT_BACKEND
+        value: "redis://redis:6379/0"
+        secure: true
+
+  - type: worker
+    name: celery_scan_worker
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    branch: main
+    plan: free
+    startCommand: celery -A app.core.celery_app worker -Q scan_queue --loglevel=info --concurrency=3 -n scan_worker@%h -E
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
+        secure: true
+      - key: CELERY_BROKER_URL
+        value: "redis://redis:6379/0"
+        secure: true
+      - key: CELERY_RESULT_BACKEND
+        value: "redis://redis:6379/0"
+        secure: true
+
+  - type: worker
+    name: celery_beat
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    branch: main
+    plan: free
+    startCommand: celery -A app.core.celery_app beat --loglevel=info
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
+        secure: true
+      - key: CELERY_BROKER_URL
+        value: "redis://redis:6379/0"
+        secure: true
+      - key: CELERY_RESULT_BACKEND
+        value: "redis://redis:6379/0"
+        secure: true

@@ -96,6 +96,158 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "AsyncGenerator",
         "importPath": "typing",
         "description": "typing",
@@ -112,11 +264,379 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "cast",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
         "documentation": {}
     },
     {
@@ -193,6 +713,14 @@
         "documentation": {}
     },
     {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "create_engine",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -209,6 +737,46 @@
         "documentation": {}
     },
     {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "desc",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "select",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -226,6 +794,78 @@
     },
     {
         "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Index",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -338,6 +978,30 @@
     },
     {
         "label": "delete",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -359,6 +1023,22 @@
         "importPath": "sqlmodel",
         "description": "sqlmodel",
         "detail": "sqlmodel",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
         "documentation": {}
     },
     {
@@ -451,7 +1131,47 @@
         "documentation": {}
     },
     {
+        "label": "async_sessionmaker",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncEngine",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
         "label": "Config",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "CeleryConfig",
         "importPath": "app.core.config",
         "description": "app.core.config",
         "isExtraImport": true,
@@ -484,6 +1204,30 @@
     },
     {
         "label": "AppConfig",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "ZAPConfig",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "ZAPConfig",
         "importPath": "app.core.config",
         "description": "app.core.config",
         "isExtraImport": true,
@@ -571,6 +1315,38 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "Depends",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -588,22 +1364,6 @@
     },
     {
         "label": "status",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Request",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -699,6 +1459,22 @@
         "documentation": {}
     },
     {
+        "label": "SessionLocal",
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "isExtraImport": true,
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "isExtraImport": true,
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
         "label": "async_engine",
         "importPath": "app.core.db",
         "description": "app.core.db",
@@ -747,11 +1523,323 @@
         "documentation": {}
     },
     {
-        "label": "verify_site_ownership",
-        "importPath": "app.middleware.site_middleware",
-        "description": "app.middleware.site_middleware",
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
         "isExtraImport": true,
-        "detail": "app.middleware.site_middleware",
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "PlainTextResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "scanner_manager",
+        "importPath": "app.services.scanner_manager",
+        "description": "app.services.scanner_manager",
+        "isExtraImport": true,
+        "detail": "app.services.scanner_manager",
+        "documentation": {}
+    },
+    {
+        "label": "scanner_manager",
+        "importPath": "app.services.scanner_manager",
+        "description": "app.services.scanner_manager",
+        "isExtraImport": true,
+        "detail": "app.services.scanner_manager",
+        "documentation": {}
+    },
+    {
+        "label": "scanner_manager",
+        "importPath": "app.services.scanner_manager",
+        "description": "app.services.scanner_manager",
+        "isExtraImport": true,
+        "detail": "app.services.scanner_manager",
+        "documentation": {}
+    },
+    {
+        "label": "metrics_collector",
+        "importPath": "app.services.metrics",
+        "description": "app.services.metrics",
+        "isExtraImport": true,
+        "detail": "app.services.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "metrics_collector",
+        "importPath": "app.services.metrics",
+        "description": "app.services.metrics",
+        "isExtraImport": true,
+        "detail": "app.services.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "celery_app",
+        "importPath": "app.core.celery_app",
+        "description": "app.core.celery_app",
+        "isExtraImport": true,
+        "detail": "app.core.celery_app",
+        "documentation": {}
+    },
+    {
+        "label": "celery_app",
+        "importPath": "app.core.celery_app",
+        "description": "app.core.celery_app",
+        "isExtraImport": true,
+        "detail": "app.core.celery_app",
+        "documentation": {}
+    },
+    {
+        "label": "celery_app",
+        "importPath": "app.core.celery_app",
+        "description": "app.core.celery_app",
+        "isExtraImport": true,
+        "detail": "app.core.celery_app",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "metrics_logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "BasicScanCreate",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "FullScanCreate",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanResponse",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanDetailResponse",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanFullDetailResponse",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanListResponse",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanStatsResponse",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousScanCreate",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousScanResponse",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "BasicScanCreate",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "FullScanCreate",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanUpdate",
+        "importPath": "app.schemas.scan",
+        "description": "app.schemas.scan",
+        "isExtraImport": true,
+        "detail": "app.schemas.scan",
         "documentation": {}
     },
     {
@@ -779,6 +1867,246 @@
         "documentation": {}
     },
     {
+        "label": "ScanStatus",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanType",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "Scan",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanAlert",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanStatus",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanType",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanStatus",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanType",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "RiskLevel",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "RiskLevel",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "Scan",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanAlert",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanStatus",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanType",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "RiskLevel",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "Scan",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanAlert",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "RiskLevel",
+        "importPath": "app.models.scan",
+        "description": "app.models.scan",
+        "isExtraImport": true,
+        "detail": "app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.user",
+        "description": "app.models.user",
+        "isExtraImport": true,
+        "detail": "app.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.user",
+        "description": "app.models.user",
+        "isExtraImport": true,
+        "detail": "app.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "create_basic_scan_crud",
+        "importPath": "app.crud.scan",
+        "description": "app.crud.scan",
+        "isExtraImport": true,
+        "detail": "app.crud.scan",
+        "documentation": {}
+    },
+    {
+        "label": "create_full_scan_crud",
+        "importPath": "app.crud.scan",
+        "description": "app.crud.scan",
+        "isExtraImport": true,
+        "detail": "app.crud.scan",
+        "documentation": {}
+    },
+    {
+        "label": "get_scan_by_id_crud",
+        "importPath": "app.crud.scan",
+        "description": "app.crud.scan",
+        "isExtraImport": true,
+        "detail": "app.crud.scan",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_scans_crud",
+        "importPath": "app.crud.scan",
+        "description": "app.crud.scan",
+        "isExtraImport": true,
+        "detail": "app.crud.scan",
+        "documentation": {}
+    },
+    {
+        "label": "delete_scan_crud",
+        "importPath": "app.crud.scan",
+        "description": "app.crud.scan",
+        "isExtraImport": true,
+        "detail": "app.crud.scan",
+        "documentation": {}
+    },
+    {
+        "label": "cancel_scan_crud",
+        "importPath": "app.crud.scan",
+        "description": "app.crud.scan",
+        "isExtraImport": true,
+        "detail": "app.crud.scan",
+        "documentation": {}
+    },
+    {
+        "label": "get_scan_stats_crud",
+        "importPath": "app.crud.scan",
+        "description": "app.crud.scan",
+        "isExtraImport": true,
+        "detail": "app.crud.scan",
+        "documentation": {}
+    },
+    {
+        "label": "get_scan_report_json_crud",
+        "importPath": "app.crud.scan",
+        "description": "app.crud.scan",
+        "isExtraImport": true,
+        "detail": "app.crud.scan",
+        "documentation": {}
+    },
+    {
+        "label": "get_scan_report_frontend_json_crud",
+        "importPath": "app.crud.scan",
+        "description": "app.crud.scan",
+        "isExtraImport": true,
+        "detail": "app.crud.scan",
+        "documentation": {}
+    },
+    {
+        "label": "get_scan_report_categorized_crud",
+        "importPath": "app.crud.scan",
+        "description": "app.crud.scan",
+        "isExtraImport": true,
+        "detail": "app.crud.scan",
+        "documentation": {}
+    },
+    {
         "label": "get_current_user",
         "importPath": "app.middleware.auth_middleware",
         "description": "app.middleware.auth_middleware",
@@ -792,6 +2120,31 @@
         "description": "app.middleware.auth_middleware",
         "isExtraImport": true,
         "detail": "app.middleware.auth_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "verify_site_ownership",
+        "importPath": "app.middleware.site_middleware",
+        "description": "app.middleware.site_middleware",
+        "isExtraImport": true,
+        "detail": "app.middleware.site_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousScannerService",
+        "importPath": "app.services.anonymous_scanner",
+        "description": "app.services.anonymous_scanner",
+        "isExtraImport": true,
+        "detail": "app.services.anonymous_scanner",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -851,6 +2204,38 @@
         "documentation": {}
     },
     {
+        "label": "Task",
+        "importPath": "celery",
+        "description": "celery",
+        "isExtraImport": true,
+        "detail": "celery",
+        "documentation": {}
+    },
+    {
+        "label": "crontab",
+        "importPath": "celery.schedules",
+        "description": "celery.schedules",
+        "isExtraImport": true,
+        "detail": "celery.schedules",
+        "documentation": {}
+    },
+    {
+        "label": "Queue",
+        "importPath": "kombu",
+        "description": "kombu",
+        "isExtraImport": true,
+        "detail": "kombu",
+        "documentation": {}
+    },
+    {
+        "label": "Exchange",
+        "importPath": "kombu",
+        "description": "kombu",
+        "isExtraImport": true,
+        "detail": "kombu",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -876,7 +2261,23 @@
         "documentation": {}
     },
     {
+        "label": "NullPool",
+        "importPath": "sqlalchemy.pool",
+        "description": "sqlalchemy.pool",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.pool",
+        "documentation": {}
+    },
+    {
         "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "selectinload",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -908,6 +2309,22 @@
         "documentation": {}
     },
     {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
@@ -924,238 +2341,11 @@
         "documentation": {}
     },
     {
-        "label": "FastMail",
-        "importPath": "fastapi_mail",
-        "description": "fastapi_mail",
+        "label": "SecretStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "fastapi_mail",
-        "documentation": {}
-    },
-    {
-        "label": "MessageSchema",
-        "importPath": "fastapi_mail",
-        "description": "fastapi_mail",
-        "isExtraImport": true,
-        "detail": "fastapi_mail",
-        "documentation": {}
-    },
-    {
-        "label": "MessageType",
-        "importPath": "fastapi_mail",
-        "description": "fastapi_mail",
-        "isExtraImport": true,
-        "detail": "fastapi_mail",
-        "documentation": {}
-    },
-    {
-        "label": "ConnectionConfig",
-        "importPath": "fastapi_mail",
-        "description": "fastapi_mail",
-        "isExtraImport": true,
-        "detail": "fastapi_mail",
-        "documentation": {}
-    },
-    {
-        "label": "CryptContext",
-        "importPath": "passlib.context",
-        "description": "passlib.context",
-        "isExtraImport": true,
-        "detail": "passlib.context",
-        "documentation": {}
-    },
-    {
-        "label": "logger",
-        "importPath": "app.utils.logger",
-        "description": "app.utils.logger",
-        "isExtraImport": true,
-        "detail": "app.utils.logger",
-        "documentation": {}
-    },
-    {
-        "label": "logger",
-        "importPath": "app.utils.logger",
-        "description": "app.utils.logger",
-        "isExtraImport": true,
-        "detail": "app.utils.logger",
-        "documentation": {}
-    },
-    {
-        "label": "logger",
-        "importPath": "app.utils.logger",
-        "description": "app.utils.logger",
-        "isExtraImport": true,
-        "detail": "app.utils.logger",
-        "documentation": {}
-    },
-    {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
-        "isExtraImport": true,
-        "detail": "fastapi.responses",
-        "documentation": {}
-    },
-    {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
-        "isExtraImport": true,
-        "detail": "fastapi.responses",
-        "documentation": {}
-    },
-    {
-        "label": "Site",
-        "importPath": "app.models.site",
-        "description": "app.models.site",
-        "isExtraImport": true,
-        "detail": "app.models.site",
-        "documentation": {}
-    },
-    {
-        "label": "Site",
-        "importPath": "app.models.site",
-        "description": "app.models.site",
-        "isExtraImport": true,
-        "detail": "app.models.site",
-        "documentation": {}
-    },
-    {
-        "label": "Site",
-        "importPath": "app.models.site",
-        "description": "app.models.site",
-        "isExtraImport": true,
-        "detail": "app.models.site",
-        "documentation": {}
-    },
-    {
-        "label": "generate_domain_verification_token",
-        "importPath": "app.utils.generate_tokens",
-        "description": "app.utils.generate_tokens",
-        "isExtraImport": true,
-        "detail": "app.utils.generate_tokens",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "verify_domain_task",
-        "importPath": "app.tasks.domain_verification",
-        "description": "app.tasks.domain_verification",
-        "isExtraImport": true,
-        "detail": "app.tasks.domain_verification",
-        "documentation": {}
-    },
-    {
-        "label": "random,",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "random.",
-        "description": "random.",
-        "detail": "random.",
-        "documentation": {}
-    },
-    {
-        "label": "send_email",
-        "importPath": "app.core.email",
-        "description": "app.core.email",
-        "isExtraImport": true,
-        "detail": "app.core.email",
-        "documentation": {}
-    },
-    {
-        "label": "jwt",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "jwt",
-        "description": "jwt",
-        "detail": "jwt",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.models.user",
-        "description": "app.models.user",
-        "isExtraImport": true,
-        "detail": "app.models.user",
-        "documentation": {}
-    },
-    {
-        "label": "select",
-        "importPath": "sqlalchemy.future",
-        "description": "sqlalchemy.future",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.future",
-        "documentation": {}
-    },
-    {
-        "label": "dns.resolver",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "dns.resolver",
-        "description": "dns.resolver",
-        "detail": "dns.resolver",
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -1176,6 +2366,38 @@
     },
     {
         "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "HttpUrl",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -1231,6 +2453,322 @@
         "documentation": {}
     },
     {
+        "label": "FastMail",
+        "importPath": "fastapi_mail",
+        "description": "fastapi_mail",
+        "isExtraImport": true,
+        "detail": "fastapi_mail",
+        "documentation": {}
+    },
+    {
+        "label": "MessageSchema",
+        "importPath": "fastapi_mail",
+        "description": "fastapi_mail",
+        "isExtraImport": true,
+        "detail": "fastapi_mail",
+        "documentation": {}
+    },
+    {
+        "label": "ConnectionConfig",
+        "importPath": "fastapi_mail",
+        "description": "fastapi_mail",
+        "isExtraImport": true,
+        "detail": "fastapi_mail",
+        "documentation": {}
+    },
+    {
+        "label": "MessageType",
+        "importPath": "fastapi_mail",
+        "description": "fastapi_mail",
+        "isExtraImport": true,
+        "detail": "fastapi_mail",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "importPath": "app.core.email",
+        "description": "app.core.email",
+        "isExtraImport": true,
+        "detail": "app.core.email",
+        "documentation": {}
+    },
+    {
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
+        "isExtraImport": true,
+        "detail": "passlib.context",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "run_scan",
+        "importPath": "app.tasks.scan_tasks",
+        "description": "app.tasks.scan_tasks",
+        "isExtraImport": true,
+        "detail": "app.tasks.scan_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Site",
+        "importPath": "app.models.site",
+        "description": "app.models.site",
+        "isExtraImport": true,
+        "detail": "app.models.site",
+        "documentation": {}
+    },
+    {
+        "label": "Site",
+        "importPath": "app.models.site",
+        "description": "app.models.site",
+        "isExtraImport": true,
+        "detail": "app.models.site",
+        "documentation": {}
+    },
+    {
+        "label": "Site",
+        "importPath": "app.models.site",
+        "description": "app.models.site",
+        "isExtraImport": true,
+        "detail": "app.models.site",
+        "documentation": {}
+    },
+    {
+        "label": "Site",
+        "importPath": "app.models.site",
+        "description": "app.models.site",
+        "isExtraImport": true,
+        "detail": "app.models.site",
+        "documentation": {}
+    },
+    {
+        "label": "generate_domain_verification_token",
+        "importPath": "app.utils.generate_tokens",
+        "description": "app.utils.generate_tokens",
+        "isExtraImport": true,
+        "detail": "app.utils.generate_tokens",
+        "documentation": {}
+    },
+    {
+        "label": "verify_domain_task",
+        "importPath": "app.tasks.domain_verification",
+        "description": "app.tasks.domain_verification",
+        "isExtraImport": true,
+        "detail": "app.tasks.domain_verification",
+        "documentation": {}
+    },
+    {
+        "label": "verify_domain_task",
+        "importPath": "app.tasks.domain_verification",
+        "description": "app.tasks.domain_verification",
+        "isExtraImport": true,
+        "detail": "app.tasks.domain_verification",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy.future",
+        "description": "sqlalchemy.future",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.future",
+        "documentation": {}
+    },
+    {
+        "label": "dns.resolver",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dns.resolver",
+        "description": "dns.resolver",
+        "detail": "dns.resolver",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -1246,6 +2784,121 @@
         "importPath": "time",
         "description": "time",
         "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Lock",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "Lock",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "ZAPScanner",
+        "importPath": "app.services.zap_scanner",
+        "description": "app.services.zap_scanner",
+        "isExtraImport": true,
+        "detail": "app.services.zap_scanner",
+        "documentation": {}
+    },
+    {
+        "label": "ZAPv2",
+        "importPath": "zapv2",
+        "description": "zapv2",
+        "isExtraImport": true,
+        "detail": "zapv2",
+        "documentation": {}
+    },
+    {
+        "label": "ZAPv2",
+        "importPath": "zapv2",
+        "description": "zapv2",
+        "isExtraImport": true,
+        "detail": "zapv2",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "ipaddress",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ipaddress",
+        "description": "ipaddress",
+        "detail": "ipaddress",
+        "documentation": {}
+    },
+    {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "docker",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "docker",
+        "description": "docker",
+        "detail": "docker",
+        "documentation": {}
+    },
+    {
+        "label": "NotFound",
+        "importPath": "docker.errors",
+        "description": "docker.errors",
+        "isExtraImport": true,
+        "detail": "docker.errors",
+        "documentation": {}
+    },
+    {
+        "label": "APIError",
+        "importPath": "docker.errors",
+        "description": "docker.errors",
+        "isExtraImport": true,
+        "detail": "docker.errors",
         "documentation": {}
     },
     {
@@ -1267,36 +2920,59 @@
         "documentation": {}
     },
     {
-        "label": "sys",
-        "kind": 6,
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
         "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
+        "detail": "fastapi.middleware.cors",
         "documentation": {}
     },
     {
         "label": "auth_router",
-        "importPath": "app.api.v1",
-        "description": "app.api.v1",
+        "importPath": "app.api.v1.auth",
+        "description": "app.api.v1.auth",
         "isExtraImport": true,
-        "detail": "app.api.v1",
+        "detail": "app.api.v1.auth",
         "documentation": {}
     },
     {
         "label": "site_router",
-        "importPath": "app.api.v1",
-        "description": "app.api.v1",
+        "importPath": "app.api.v1.site",
+        "description": "app.api.v1.site",
         "isExtraImport": true,
-        "detail": "app.api.v1",
+        "detail": "app.api.v1.site",
         "documentation": {}
     },
     {
         "label": "scan_router",
-        "importPath": "app.api.v1",
-        "description": "app.api.v1",
+        "importPath": "app.api.v1.scan",
+        "description": "app.api.v1.scan",
         "isExtraImport": true,
-        "detail": "app.api.v1",
+        "detail": "app.api.v1.scan",
+        "documentation": {}
+    },
+    {
+        "label": "health_router",
+        "importPath": "app.api.v1.health",
+        "description": "app.api.v1.health",
+        "isExtraImport": true,
+        "detail": "app.api.v1.health",
+        "documentation": {}
+    },
+    {
+        "label": "scan_tasks",
+        "importPath": "app.tasks",
+        "description": "app.tasks",
+        "isExtraImport": true,
+        "detail": "app.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "domain_verification",
+        "importPath": "app.tasks",
+        "description": "app.tasks",
+        "isExtraImport": true,
+        "detail": "app.tasks",
         "documentation": {}
     },
     {
@@ -1320,6 +2996,42 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "backend.alembic.versions.1229be03c333_add_scans_and_scan_alerts_tables",
+        "description": "backend.alembic.versions.1229be03c333_add_scans_and_scan_alerts_tables",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # Create ENUM types if they don't exist\n    op.execute(\"DO $$ BEGIN CREATE TYPE scanstatus AS ENUM ('pending', 'in_progress', 'completed', 'failed', 'cancelled'); EXCEPTION WHEN duplicate_object THEN null; END $$;\")\n    op.execute(\"DO $$ BEGIN CREATE TYPE scantype AS ENUM ('basic', 'full'); EXCEPTION WHEN duplicate_object THEN null; END $$;\")\n    op.execute(\"DO $$ BEGIN CREATE TYPE risklevel AS ENUM ('high', 'medium', 'low', 'informational'); EXCEPTION WHEN duplicate_object THEN null; END $$;\")\n    # Create scans table\n    op.create_table(\n        'scans',\n        sa.Column('id', sa.Integer(), nullable=False),",
+        "detail": "backend.alembic.versions.1229be03c333_add_scans_and_scan_alerts_tables",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.1229be03c333_add_scans_and_scan_alerts_tables",
+        "description": "backend.alembic.versions.1229be03c333_add_scans_and_scan_alerts_tables",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    op.drop_index(op.f('ix_scan_alerts_scan_id'), table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_risk_level'), table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_alert_name'), table_name='scan_alerts')\n    op.drop_table('scan_alerts')\n    op.drop_index(op.f('ix_scans_user_id'), table_name='scans')\n    op.drop_index(op.f('ix_scans_target_url'), table_name='scans')\n    op.drop_index(op.f('ix_scans_status'), table_name='scans')\n    op.drop_index(op.f('ix_scans_celery_task_id'), table_name='scans')",
+        "detail": "backend.alembic.versions.1229be03c333_add_scans_and_scan_alerts_tables",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.496feab1316f_sync_scans_schema_with_model",
+        "description": "backend.alembic.versions.496feab1316f_sync_scans_schema_with_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    pass\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    pass",
+        "detail": "backend.alembic.versions.496feab1316f_sync_scans_schema_with_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.496feab1316f_sync_scans_schema_with_model",
+        "description": "backend.alembic.versions.496feab1316f_sync_scans_schema_with_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    pass",
+        "detail": "backend.alembic.versions.496feab1316f_sync_scans_schema_with_model",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "backend.alembic.versions.4e45bd14838d_fix_and_initial_migration_after_",
         "description": "backend.alembic.versions.4e45bd14838d_fix_and_initial_migration_after_",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('users',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('first_name', sa.String(), nullable=False),\n    sa.Column('last_name', sa.String(), nullable=True),\n    sa.Column('email', sa.String(), nullable=False),\n    sa.Column('password_hash', sa.String(), nullable=False),\n    sa.Column('is_verified', sa.Boolean(), nullable=True),",
@@ -1333,6 +3045,24 @@
         "description": "backend.alembic.versions.4e45bd14838d_fix_and_initial_migration_after_",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index(op.f('ix_sites_id'), table_name='sites')\n    op.drop_index(op.f('ix_sites_domain'), table_name='sites')\n    op.drop_table('sites')\n    op.drop_index(op.f('ix_refresh_tokens_token'), table_name='refresh_tokens')\n    op.drop_index(op.f('ix_refresh_tokens_id'), table_name='refresh_tokens')\n    op.drop_table('refresh_tokens')\n    op.drop_index(op.f('ix_users_id'), table_name='users')",
         "detail": "backend.alembic.versions.4e45bd14838d_fix_and_initial_migration_after_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.6336603e94cd_optimize_scan_alerts_indexes_for_faster_",
+        "description": "backend.alembic.versions.6336603e94cd_optimize_scan_alerts_indexes_for_faster_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index(op.f('ix_scan_alerts_alert_name'), table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_confidence'), table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_created_at'), table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_cwe_id'), table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_id'), table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_risk_level'), table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_url'), table_name='scan_alerts')",
+        "detail": "backend.alembic.versions.6336603e94cd_optimize_scan_alerts_indexes_for_faster_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.6336603e94cd_optimize_scan_alerts_indexes_for_faster_",
+        "description": "backend.alembic.versions.6336603e94cd_optimize_scan_alerts_indexes_for_faster_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_index(op.f('ix_scan_alerts_url'), 'scan_alerts', ['url'], unique=False)\n    op.create_index(op.f('ix_scan_alerts_risk_level'), 'scan_alerts', ['risk_level'], unique=False)\n    op.create_index(op.f('ix_scan_alerts_id'), 'scan_alerts', ['id'], unique=False)\n    op.create_index(op.f('ix_scan_alerts_cwe_id'), 'scan_alerts', ['cwe_id'], unique=False)\n    op.create_index(op.f('ix_scan_alerts_created_at'), 'scan_alerts', ['created_at'], unique=False)\n    op.create_index(op.f('ix_scan_alerts_confidence'), 'scan_alerts', ['confidence'], unique=False)\n    op.create_index(op.f('ix_scan_alerts_alert_name'), 'scan_alerts', ['alert_name'], unique=False)",
+        "detail": "backend.alembic.versions.6336603e94cd_optimize_scan_alerts_indexes_for_faster_",
         "documentation": {}
     },
     {
@@ -1374,6 +3104,24 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "backend.alembic.versions.9b4ca5199cd8_add_priority_field_and_optimize_indexes",
+        "description": "backend.alembic.versions.9b4ca5199cd8_add_priority_field_and_optimize_indexes",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_index(op.f('ix_scan_alerts_confidence'), 'scan_alerts', ['confidence'], unique=False)\n    op.create_index(op.f('ix_scan_alerts_created_at'), 'scan_alerts', ['created_at'], unique=False)\n    op.create_index(op.f('ix_scan_alerts_cwe_id'), 'scan_alerts', ['cwe_id'], unique=False)\n    op.create_index(op.f('ix_scan_alerts_id'), 'scan_alerts', ['id'], unique=False)\n    op.create_index('ix_scan_alerts_scan_created', 'scan_alerts', ['scan_id', 'created_at'], unique=False)\n    op.create_index('ix_scan_alerts_scan_risk', 'scan_alerts', ['scan_id', 'risk_level'], unique=False)\n    op.create_index(op.f('ix_scan_alerts_url'), 'scan_alerts', ['url'], unique=False)",
+        "detail": "backend.alembic.versions.9b4ca5199cd8_add_priority_field_and_optimize_indexes",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.9b4ca5199cd8_add_priority_field_and_optimize_indexes",
+        "description": "backend.alembic.versions.9b4ca5199cd8_add_priority_field_and_optimize_indexes",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index(op.f('ix_scans_id'), table_name='scans')\n    op.drop_column('scans', 'priority')\n    op.drop_index(op.f('ix_scan_alerts_url'), table_name='scan_alerts')\n    op.drop_index('ix_scan_alerts_scan_risk', table_name='scan_alerts')\n    op.drop_index('ix_scan_alerts_scan_created', table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_id'), table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_cwe_id'), table_name='scan_alerts')",
+        "detail": "backend.alembic.versions.9b4ca5199cd8_add_priority_field_and_optimize_indexes",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "backend.alembic.versions.b1c158fa34e3_make_the_site_verified_at_as_nullable",
         "description": "backend.alembic.versions.b1c158fa34e3_make_the_site_verified_at_as_nullable",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.alter_column('sites', 'verified_at',\n               existing_type=postgresql.TIMESTAMP(),\n               nullable=True)\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###",
@@ -1392,9 +3140,45 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "backend.alembic.versions.b37ca55f8b1b_merge_scan_and_site_migrations",
+        "description": "backend.alembic.versions.b37ca55f8b1b_merge_scan_and_site_migrations",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    pass\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    pass",
+        "detail": "backend.alembic.versions.b37ca55f8b1b_merge_scan_and_site_migrations",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.b37ca55f8b1b_merge_scan_and_site_migrations",
+        "description": "backend.alembic.versions.b37ca55f8b1b_merge_scan_and_site_migrations",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    pass",
+        "detail": "backend.alembic.versions.b37ca55f8b1b_merge_scan_and_site_migrations",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.b426481be371_remove_priority_field_from_scans_table",
+        "description": "backend.alembic.versions.b426481be371_remove_priority_field_from_scans_table",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('scans', 'priority')\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('scans', sa.Column('priority', sa.INTEGER(), server_default=sa.text('5'), autoincrement=False, nullable=False))\n    # ### end Alembic commands ###",
+        "detail": "backend.alembic.versions.b426481be371_remove_priority_field_from_scans_table",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.b426481be371_remove_priority_field_from_scans_table",
+        "description": "backend.alembic.versions.b426481be371_remove_priority_field_from_scans_table",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('scans', sa.Column('priority', sa.INTEGER(), server_default=sa.text('5'), autoincrement=False, nullable=False))\n    # ### end Alembic commands ###",
+        "detail": "backend.alembic.versions.b426481be371_remove_priority_field_from_scans_table",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "backend.alembic.versions.b4563434b572_add_verification_token_expires_at_to_",
         "description": "backend.alembic.versions.b4563434b572_add_verification_token_expires_at_to_",
-        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('sites', sa.Column('verification_token_expires_at', sa.DateTime(), nullable=False))\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('sites', 'verification_token_expires_at')\n    # ### end Alembic commands ###",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('sites', sa.Column('verification_token_expires_at', sa.DateTime(), nullable=True))\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('sites', 'verification_token_expires_at')\n    # ### end Alembic commands ###",
         "detail": "backend.alembic.versions.b4563434b572_add_verification_token_expires_at_to_",
         "documentation": {}
     },
@@ -1405,6 +3189,60 @@
         "description": "backend.alembic.versions.b4563434b572_add_verification_token_expires_at_to_",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('sites', 'verification_token_expires_at')\n    # ### end Alembic commands ###",
         "detail": "backend.alembic.versions.b4563434b572_add_verification_token_expires_at_to_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.c8f9a2d4e1b0_remove_unused_columns",
+        "description": "backend.alembic.versions.c8f9a2d4e1b0_remove_unused_columns",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Remove unused columns from database.\"\"\"\n    # Remove scan_config from scans table (never used in codebase)\n    op.drop_column('scans', 'scan_config')\n    # Remove verified_at from sites table (only referenced in commented code)\n    op.drop_column('sites', 'verified_at')\ndef downgrade() -> None:\n    \"\"\"Restore unused columns if needed.\"\"\"\n    # Restore scan_config to scans table\n    op.add_column('scans', sa.Column('scan_config', postgresql.JSON(astext_type=sa.Text()), nullable=True))",
+        "detail": "backend.alembic.versions.c8f9a2d4e1b0_remove_unused_columns",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.c8f9a2d4e1b0_remove_unused_columns",
+        "description": "backend.alembic.versions.c8f9a2d4e1b0_remove_unused_columns",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Restore unused columns if needed.\"\"\"\n    # Restore scan_config to scans table\n    op.add_column('scans', sa.Column('scan_config', postgresql.JSON(astext_type=sa.Text()), nullable=True))\n    # Restore verified_at to sites table\n    op.add_column('sites', sa.Column('verified_at', postgresql.TIMESTAMP(), nullable=True))",
+        "detail": "backend.alembic.versions.c8f9a2d4e1b0_remove_unused_columns",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.ce3ae3d65fa2_merge_heads",
+        "description": "backend.alembic.versions.ce3ae3d65fa2_merge_heads",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    pass\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    pass",
+        "detail": "backend.alembic.versions.ce3ae3d65fa2_merge_heads",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.ce3ae3d65fa2_merge_heads",
+        "description": "backend.alembic.versions.ce3ae3d65fa2_merge_heads",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    pass",
+        "detail": "backend.alembic.versions.ce3ae3d65fa2_merge_heads",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.d1a2b3c4d5e6_fix_scan_type_values_from_active",
+        "description": "backend.alembic.versions.d1a2b3c4d5e6_fix_scan_type_values_from_active",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"\n    Drop and recreate scans and scan_alerts tables to match the current models.\n    This ensures the database schema is correct with proper enum values.\n    \"\"\"\n    # Drop existing tables (cascade will handle scan_alerts)\n    op.execute(\"DROP TABLE IF EXISTS scan_alerts CASCADE\")\n    op.execute(\"DROP TABLE IF EXISTS scans CASCADE\")\n    # Drop existing enum types\n    op.execute(\"DROP TYPE IF EXISTS scanstatus CASCADE\")",
+        "detail": "backend.alembic.versions.d1a2b3c4d5e6_fix_scan_type_values_from_active",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "backend.alembic.versions.d1a2b3c4d5e6_fix_scan_type_values_from_active",
+        "description": "backend.alembic.versions.d1a2b3c4d5e6_fix_scan_type_values_from_active",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"\n    Downgrade by dropping the tables and enum types.\n    \"\"\"\n    # Drop indexes\n    op.drop_index('ix_scan_alerts_scan_created', table_name='scan_alerts')\n    op.drop_index('ix_scan_alerts_scan_risk', table_name='scan_alerts')\n    op.drop_index(op.f('ix_scan_alerts_scan_id'), table_name='scan_alerts')\n    op.drop_index(op.f('ix_scans_celery_task_id'), table_name='scans')\n    op.drop_index(op.f('ix_scans_status'), table_name='scans')",
+        "detail": "backend.alembic.versions.d1a2b3c4d5e6_fix_scan_type_values_from_active",
         "documentation": {}
     },
     {
@@ -1489,11 +3327,47 @@
         "documentation": {}
     },
     {
+        "label": "check_zap_health",
+        "kind": 2,
+        "importPath": "backend.app.api.v1.health",
+        "description": "backend.app.api.v1.health",
+        "peekOfCode": "def check_zap_health() -> bool:\n    \"\"\"Check if ZAP service is accessible\"\"\"\n    try:\n        # Force a connection attempt to verify ZAP is actually reachable\n        # This will initialize the connection if it hasn't been initialized yet\n        from zapv2 import ZAPv2\n        from app.core.config import ZAPConfig\n        zap_client = ZAPv2(\n            apikey=ZAPConfig.ZAP_API_KEY,\n            proxies={",
+        "detail": "backend.app.api.v1.health",
+        "documentation": {}
+    },
+    {
+        "label": "check_celery_health",
+        "kind": 2,
+        "importPath": "backend.app.api.v1.health",
+        "description": "backend.app.api.v1.health",
+        "peekOfCode": "def check_celery_health() -> bool:\n    \"\"\"Check if Celery/Redis is accessible\"\"\"\n    try:\n        # Ping Celery workers\n        inspect = celery_app.control.inspect()\n        stats = inspect.stats()\n        # If we get stats back, Celery is running\n        return stats is not None and len(stats) > 0\n    except Exception as e:\n        logger.error(f\"Celery health check failed: {e}\")",
+        "detail": "backend.app.api.v1.health",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.health",
+        "description": "backend.app.api.v1.health",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/health\", tags=[\"Health\"])\nasync def health_check(session: AsyncSession = Depends(get_session)):\n    \"\"\"\n    Overall health check - returns 200 if all services are healthy\n    Checks: Database, ZAP, Redis/Celery\n    \"\"\"\n    health_status = {\n        \"status\": \"healthy\",\n        \"services\": {}",
+        "detail": "backend.app.api.v1.health",
+        "documentation": {}
+    },
+    {
+        "label": "health_router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.health",
+        "description": "backend.app.api.v1.health",
+        "peekOfCode": "health_router = router",
+        "detail": "backend.app.api.v1.health",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "backend.app.api.v1.scan",
         "description": "backend.app.api.v1.scan",
-        "peekOfCode": "router = APIRouter()\nscan_router = router\n@router.post(\"/test\")\nasync def test_scan_domain(domain: ValidDomainSchema, user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    await verify_site_ownership(domain, user, session)\n    return {\"success\": True, \"message\": \"Test scan endpoint hit.\", \"domain\": domain.domain}",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/anonymous\", status_code=status.HTTP_200_OK, response_model=AnonymousScanResponse)\nasync def create_anonymous_scan(data: AnonymousScanCreate):\n    \"\"\"\n    Run an anonymous basic security scan (NO AUTHENTICATION REQUIRED)\n    This endpoint allows anyone to perform a basic security scan without creating an account.\n    Perfect for landing pages where users want to try the scanner before signing up.\n    **Features:**\n    - No authentication required\n    - No signup needed",
         "detail": "backend.app.api.v1.scan",
         "documentation": {}
     },
@@ -1502,7 +3376,7 @@
         "kind": 5,
         "importPath": "backend.app.api.v1.scan",
         "description": "backend.app.api.v1.scan",
-        "peekOfCode": "scan_router = router\n@router.post(\"/test\")\nasync def test_scan_domain(domain: ValidDomainSchema, user = Depends(get_current_user), session: AsyncSession = Depends(get_session)):\n    await verify_site_ownership(domain, user, session)\n    return {\"success\": True, \"message\": \"Test scan endpoint hit.\", \"domain\": domain.domain}",
+        "peekOfCode": "scan_router = router",
         "detail": "backend.app.api.v1.scan",
         "documentation": {}
     },
@@ -1529,7 +3403,16 @@
         "kind": 5,
         "importPath": "backend.app.core.celery_app",
         "description": "backend.app.core.celery_app",
-        "peekOfCode": "celery_app = Celery(\n    \"backend_tasks\",\n    broker=Config.CELERY_BROKER_URL,\n    backend=Config.CELERY_RESULT_BACKEND,\n    include=[\"app.tasks.domain_verification\", \"app.tasks.scan\"]\n)\ncelery_app.conf.update(\n    task_track_started=True,\n    task_time_limit=30 * 60, #30 min max runtime\n    task_soft_time_limit=25 * 60, #25 min warning",
+        "peekOfCode": "celery_app = Celery(\n    \"hack_your_own_web\",\n    broker=CeleryConfig.CELERY_BROKER_URL,\n    backend=CeleryConfig.CELERY_RESULT_BACKEND,\n    include=[\n        \"app.tasks.scan_tasks\",\n        \"app.tasks.domain_verification\",\n        \"app.tasks.domain_verification_scheduled\"\n    ]\n)",
+        "detail": "backend.app.core.celery_app",
+        "documentation": {}
+    },
+    {
+        "label": "default_exchange",
+        "kind": 5,
+        "importPath": "backend.app.core.celery_app",
+        "description": "backend.app.core.celery_app",
+        "peekOfCode": "default_exchange = Exchange('default', type='direct')\n# Celery configuration\ncelery_app.conf.update(\n    task_serializer=\"json\",\n    accept_content=[\"json\"],\n    result_serializer=\"json\",\n    timezone=\"UTC\",\n    enable_utc=True,\n    task_track_started=True,\n    task_time_limit=3600,  # 1 hour max per task",
         "detail": "backend.app.core.celery_app",
         "documentation": {}
     },
@@ -1538,7 +3421,16 @@
         "kind": 5,
         "importPath": "backend.app.core.celery_app",
         "description": "backend.app.core.celery_app",
-        "peekOfCode": "celery_app.conf.task_routes = {\n    'app.tasks.domain_verification.*': {'queue': 'domain_verification_queue'},\n    'app.tasks.scan.*': {'queue': 'scan_queue'},\n}",
+        "peekOfCode": "celery_app.conf.task_routes = {\n    'app.tasks.domain_verification.*': {'queue': 'domain_verification_queue'},\n    'app.tasks.scan_tasks.*': {'queue': 'scan_queue'},\n}\n# Scheduled (beat) tasks\ncelery_app.conf.beat_schedule = {\n    \"daily-domain-maintenance\": {\n        \"task\": \"app.tasks.domain_verification_scheduled.scheduled_domain_maintenance\",\n        \"schedule\": crontab(hour=0, minute=0),  # every day at midnight\n        # \"schedule\": 60,  # for testing, running every 60 seconds",
+        "detail": "backend.app.core.celery_app",
+        "documentation": {}
+    },
+    {
+        "label": "celery_app.conf.beat_schedule",
+        "kind": 5,
+        "importPath": "backend.app.core.celery_app",
+        "description": "backend.app.core.celery_app",
+        "peekOfCode": "celery_app.conf.beat_schedule = {\n    \"daily-domain-maintenance\": {\n        \"task\": \"app.tasks.domain_verification_scheduled.scheduled_domain_maintenance\",\n        \"schedule\": crontab(hour=0, minute=0),  # every day at midnight\n        # \"schedule\": 60,  # for testing, running every 60 seconds\n        \"options\": {\"queue\": \"domain_verification_queue\"},\n    }\n}",
         "detail": "backend.app.core.celery_app",
         "documentation": {}
     },
@@ -1570,11 +3462,29 @@
         "documentation": {}
     },
     {
+        "label": "CelerySettings",
+        "kind": 6,
+        "importPath": "backend.app.core.config",
+        "description": "backend.app.core.config",
+        "peekOfCode": "class CelerySettings(BaseSettings):\n    CELERY_BROKER_URL: str\n    CELERY_RESULT_BACKEND: str\n    model_config = SettingsConfigDict(\n        env_file=ENV_FILE,\n        extra=\"ignore\",\n    )\nclass ZAPSettings(BaseSettings):\n    ZAP_HOST: str\n    ZAP_PORT: int",
+        "detail": "backend.app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "ZAPSettings",
+        "kind": 6,
+        "importPath": "backend.app.core.config",
+        "description": "backend.app.core.config",
+        "peekOfCode": "class ZAPSettings(BaseSettings):\n    ZAP_HOST: str\n    ZAP_PORT: int\n    ZAP_API_KEY: str\n    USE_DOCKER_ZAP: bool\n    ZAP_DOCKER_IMAGE: str\n    # Timeout configurations (in seconds)\n    ZAP_PASSIVE_SCAN_TIMEOUT: int = 600  # 10 minutes\n    ZAP_SPIDER_TIMEOUT: int = 300  # 5 minutes\n    ZAP_SPIDER_MAX_DURATION: int = 5  # 5 minutes max duration",
+        "detail": "backend.app.core.config",
+        "documentation": {}
+    },
+    {
         "label": "ENV_FILE",
         "kind": 5,
         "importPath": "backend.app.core.config",
         "description": "backend.app.core.config",
-        "peekOfCode": "ENV_FILE = os.getenv(\"ENV_FILE\", \".env.prod\")\nclass Settings(BaseSettings):\n    ENV: str = \"development\"\n    DEBUG: bool = True\n    DATABASE_URL: str\n    CELERY_BROKER_URL: str\n    CELERY_RESULT_BACKEND: str\n    JWT_SECRET: str\n    JWT_ALGORITHM: str\n    ACCESS_TOKEN_EXPIRE_MINUTES: int",
+        "peekOfCode": "ENV_FILE = os.getenv(\"ENV_FILE\", \".env\")\nclass Settings(BaseSettings):\n    ENV: str = \"development\"\n    DEBUG: bool = True\n    DATABASE_URL: str\n    CELERY_BROKER_URL: str\n    CELERY_RESULT_BACKEND: str\n    JWT_SECRET: str\n    JWT_ALGORITHM: str\n    ACCESS_TOKEN_EXPIRE_MINUTES: int",
         "detail": "backend.app.core.config",
         "documentation": {}
     },
@@ -1583,7 +3493,7 @@
         "kind": 5,
         "importPath": "backend.app.core.config",
         "description": "backend.app.core.config",
-        "peekOfCode": "Config = Settings()\nAppConfig = AppSettings()\nMailConfig = MailSettings()",
+        "peekOfCode": "Config = Settings()  # type: ignore[call-arg]\nAppConfig = AppSettings()  # type: ignore[call-arg]\nMailConfig = MailSettings()  # type: ignore[call-arg]\nCeleryConfig = CelerySettings()  # type: ignore[call-arg]\nZAPConfig = ZAPSettings()  # type: ignore[call-arg]",
         "detail": "backend.app.core.config",
         "documentation": {}
     },
@@ -1592,7 +3502,7 @@
         "kind": 5,
         "importPath": "backend.app.core.config",
         "description": "backend.app.core.config",
-        "peekOfCode": "AppConfig = AppSettings()\nMailConfig = MailSettings()",
+        "peekOfCode": "AppConfig = AppSettings()  # type: ignore[call-arg]\nMailConfig = MailSettings()  # type: ignore[call-arg]\nCeleryConfig = CelerySettings()  # type: ignore[call-arg]\nZAPConfig = ZAPSettings()  # type: ignore[call-arg]",
         "detail": "backend.app.core.config",
         "documentation": {}
     },
@@ -1601,7 +3511,25 @@
         "kind": 5,
         "importPath": "backend.app.core.config",
         "description": "backend.app.core.config",
-        "peekOfCode": "MailConfig = MailSettings()",
+        "peekOfCode": "MailConfig = MailSettings()  # type: ignore[call-arg]\nCeleryConfig = CelerySettings()  # type: ignore[call-arg]\nZAPConfig = ZAPSettings()  # type: ignore[call-arg]",
+        "detail": "backend.app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "CeleryConfig",
+        "kind": 5,
+        "importPath": "backend.app.core.config",
+        "description": "backend.app.core.config",
+        "peekOfCode": "CeleryConfig = CelerySettings()  # type: ignore[call-arg]\nZAPConfig = ZAPSettings()  # type: ignore[call-arg]",
+        "detail": "backend.app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "ZAPConfig",
+        "kind": 5,
+        "importPath": "backend.app.core.config",
+        "description": "backend.app.core.config",
+        "peekOfCode": "ZAPConfig = ZAPSettings()  # type: ignore[call-arg]",
         "detail": "backend.app.core.config",
         "documentation": {}
     },
@@ -1610,7 +3538,7 @@
         "kind": 5,
         "importPath": "backend.app.core.db",
         "description": "backend.app.core.db",
-        "peekOfCode": "async_engine = create_async_engine(\n    Config.DATABASE_URL,\n    echo=False,  # set True for SQL logging\n)\n# Create session factory\nAsyncSessionLocal = sessionmaker(\n    bind=async_engine,\n    class_=AsyncSession,\n    expire_on_commit=False\n)",
+        "peekOfCode": "async_engine = create_async_engine(\n    url=Config.DATABASE_URL,\n    echo=False,\n    future=True,\n    poolclass=NullPool,  # No connection pooling - prevents event loop attachment issues\n)\nAsyncSessionLocal = async_sessionmaker(\n    bind=async_engine,\n    class_=AsyncSession,\n    expire_on_commit=False,",
         "detail": "backend.app.core.db",
         "documentation": {}
     },
@@ -1619,7 +3547,7 @@
         "kind": 5,
         "importPath": "backend.app.core.db",
         "description": "backend.app.core.db",
-        "peekOfCode": "AsyncSessionLocal = sessionmaker(\n    bind=async_engine,\n    class_=AsyncSession,\n    expire_on_commit=False\n)\n# Dependency for FastAPI\nasync def get_session() -> AsyncGenerator[AsyncSession, None]:\n    async with AsyncSessionLocal() as session:\n        yield session\n# Convert the async URL to a sync one automatically",
+        "peekOfCode": "AsyncSessionLocal = async_sessionmaker(\n    bind=async_engine,\n    class_=AsyncSession,\n    expire_on_commit=False,\n    autoflush=False,\n)\n# Dependency for FastAPI\nasync def get_session() -> AsyncGenerator[AsyncSession, None]:\n    async with AsyncSessionLocal() as session:\n        yield session",
         "detail": "backend.app.core.db",
         "documentation": {}
     },
@@ -1655,7 +3583,7 @@
         "kind": 5,
         "importPath": "backend.app.core.email",
         "description": "backend.app.core.email",
-        "peekOfCode": "conf = ConnectionConfig(\n    MAIL_USERNAME = MailConfig.MAIL_USERNAME,\n    MAIL_PASSWORD = MailConfig.MAIL_PASSWORD,\n    MAIL_FROM = MailConfig.MAIL_FROM,\n    MAIL_FROM_NAME = MailConfig.MAIL_FROM_NAME,\n    MAIL_PORT = MailConfig.MAIL_PORT,\n    MAIL_SERVER = MailConfig.MAIL_SERVER,\n    MAIL_STARTTLS = MailConfig.MAIL_STARTTLS,\n    MAIL_SSL_TLS = MailConfig.MAIL_SSL_TLS,\n    MAIL_DEBUG = MailConfig.MAIL_DEBUG,",
+        "peekOfCode": "conf = ConnectionConfig(\n    MAIL_USERNAME=MailConfig.MAIL_USERNAME,\n    MAIL_PASSWORD=SecretStr(MailConfig.MAIL_PASSWORD),\n    MAIL_FROM=MailConfig.MAIL_FROM,\n    MAIL_FROM_NAME=MailConfig.MAIL_FROM_NAME,\n    MAIL_PORT=int(MailConfig.MAIL_PORT),\n    MAIL_SERVER=MailConfig.MAIL_SERVER,\n    MAIL_STARTTLS=MailConfig.MAIL_STARTTLS,\n    MAIL_SSL_TLS=MailConfig.MAIL_SSL_TLS,\n    MAIL_DEBUG=MailConfig.MAIL_DEBUG,",
         "detail": "backend.app.core.email",
         "documentation": {}
     },
@@ -1664,7 +3592,7 @@
         "kind": 5,
         "importPath": "backend.app.core.email",
         "description": "backend.app.core.email",
-        "peekOfCode": "fm = FastMail(conf)\nasync def send_email(recipients: list, subject: str, template_name: str, context: dict):\n    message = MessageSchema(\n        subject=subject,\n        recipients=recipients,\n        template_body=context,\n        subtype=MessageType.html\n    )\n    await fm.send_message(message, template_name=template_name)",
+        "peekOfCode": "fm = FastMail(conf)\nasync def send_email(recipients: list, subject: str, template_name: str, context: dict):\n    message = MessageSchema(\n        subject=subject,\n        recipients=recipients,\n        template_body=context,\n        subtype=MessageType.html,\n    )\n    await fm.send_message(message, template_name=template_name)",
         "detail": "backend.app.core.email",
         "documentation": {}
     },
@@ -1696,11 +3624,56 @@
         "documentation": {}
     },
     {
+        "label": "ScanStatus",
+        "kind": 6,
+        "importPath": "backend.app.models.scan",
+        "description": "backend.app.models.scan",
+        "peekOfCode": "class ScanStatus(Enum):\n    PENDING = \"pending\"\n    IN_PROGRESS = \"in_progress\"\n    COMPLETED = \"completed\"\n    FAILED = \"failed\"\n    CANCELLED = \"cancelled\"\nclass ScanType(Enum):\n    BASIC = \"basic\"           # Basic passive scan (spider + passive) - No verification required\n    FULL = \"full\"             # Full active scan - Requires domain ownership verification\nclass Scan(Base):",
+        "detail": "backend.app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanType",
+        "kind": 6,
+        "importPath": "backend.app.models.scan",
+        "description": "backend.app.models.scan",
+        "peekOfCode": "class ScanType(Enum):\n    BASIC = \"basic\"           # Basic passive scan (spider + passive) - No verification required\n    FULL = \"full\"             # Full active scan - Requires domain ownership verification\nclass Scan(Base):\n    __tablename__ = \"scans\"\n    id = Column(Integer, primary_key=True, index=True)\n    user_id = Column(Integer, ForeignKey(\"users.id\"), nullable=False, index=True)\n    target_url = Column(String, nullable=False, index=True)\n    scan_type = Column(SQLEnum(ScanType, values_callable=lambda obj: [e.value for e in obj], name=\"scantype\"), nullable=False, default=ScanType.BASIC)\n    status = Column(SQLEnum(ScanStatus, values_callable=lambda obj: [e.value for e in obj], name=\"scanstatus\"), nullable=False, default=ScanStatus.PENDING, index=True)",
+        "detail": "backend.app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "Scan",
+        "kind": 6,
+        "importPath": "backend.app.models.scan",
+        "description": "backend.app.models.scan",
+        "peekOfCode": "class Scan(Base):\n    __tablename__ = \"scans\"\n    id = Column(Integer, primary_key=True, index=True)\n    user_id = Column(Integer, ForeignKey(\"users.id\"), nullable=False, index=True)\n    target_url = Column(String, nullable=False, index=True)\n    scan_type = Column(SQLEnum(ScanType, values_callable=lambda obj: [e.value for e in obj], name=\"scantype\"), nullable=False, default=ScanType.BASIC)\n    status = Column(SQLEnum(ScanStatus, values_callable=lambda obj: [e.value for e in obj], name=\"scanstatus\"), nullable=False, default=ScanStatus.PENDING, index=True)\n    # Celery task tracking\n    celery_task_id = Column(String, nullable=True, index=True)\n    # Progress tracking",
+        "detail": "backend.app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "RiskLevel",
+        "kind": 6,
+        "importPath": "backend.app.models.scan",
+        "description": "backend.app.models.scan",
+        "peekOfCode": "class RiskLevel(Enum):\n    HIGH = \"high\"\n    MEDIUM = \"medium\"\n    LOW = \"low\"\n    INFORMATIONAL = \"informational\"\nclass ScanAlert(Base):\n    __tablename__ = \"scan_alerts\"\n    __table_args__ = (\n        # OPTIMIZED: Only keep essential composite indexes for common queries\n        # Removed individual indexes on: id, alert_name, risk_level, confidence, cwe_id, url, created_at",
+        "detail": "backend.app.models.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanAlert",
+        "kind": 6,
+        "importPath": "backend.app.models.scan",
+        "description": "backend.app.models.scan",
+        "peekOfCode": "class ScanAlert(Base):\n    __tablename__ = \"scan_alerts\"\n    __table_args__ = (\n        # OPTIMIZED: Only keep essential composite indexes for common queries\n        # Removed individual indexes on: id, alert_name, risk_level, confidence, cwe_id, url, created_at\n        # This reduces index overhead during bulk inserts by ~50%\n        Index('ix_scan_alerts_scan_risk', 'scan_id', 'risk_level'),  # Filter alerts by scan and risk\n        Index('ix_scan_alerts_scan_created', 'scan_id', 'created_at'),  # Sort alerts by creation time within scan\n    )\n    id = Column(Integer, primary_key=True)  # Removed index=True (primary key is already indexed)",
+        "detail": "backend.app.models.scan",
+        "documentation": {}
+    },
+    {
         "label": "Site",
         "kind": 6,
         "importPath": "backend.app.models.site",
         "description": "backend.app.models.site",
-        "peekOfCode": "class Site(Base):\n    __tablename__ = \"sites\"\n    id = Column(Integer, primary_key=True, index=True)\n    domain = Column(String, nullable=False, index=True)\n    verification_token = Column(String, nullable=False, unique=True)\n    # verification_token_expires_at = Column(DateTime, nullable=False)\n    is_verified = Column(Boolean, default=False)\n    verified_at = Column(DateTime, nullable=True)\n    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)\n    user_id = Column(Integer, ForeignKey(\"users.id\"), nullable=False)",
+        "peekOfCode": "class Site(Base):\n    __tablename__ = \"sites\"\n    id = Column(Integer, primary_key=True, index=True)\n    domain = Column(String, nullable=False, index=True)\n    verification_token = Column(String, nullable=False, unique=True)\n    is_verified = Column(Boolean, default=False)\n    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)\n    user_id = Column(Integer, ForeignKey(\"users.id\"), nullable=False)\n    # relationships\n    user = relationship(\"User\", back_populates=\"sites\")",
         "detail": "backend.app.models.site",
         "documentation": {}
     },
@@ -1709,7 +3682,7 @@
         "kind": 6,
         "importPath": "backend.app.models.user",
         "description": "backend.app.models.user",
-        "peekOfCode": "class RefreshToken(Base):\n    __tablename__ = \"refresh_tokens\"\n    id= Column(Integer, primary_key=True, index=True)\n    token= Column(String, nullable=False, unique=True, index=True)\n    user_id= Column(Integer, ForeignKey(\"users.id\"), nullable=False)\n    created_at= Column(DateTime, default=datetime.utcnow, nullable=False)\n    expires_at= Column(DateTime, nullable=False)\n    # relationship\n    user = relationship(\"User\", back_populates=\"refresh_tokens\")\nclass User(Base):",
+        "peekOfCode": "class RefreshToken(Base):\n    __tablename__ = \"refresh_tokens\"\n    id = Column(Integer, primary_key=True, index=True)\n    token = Column(String, nullable=False, unique=True, index=True)\n    user_id = Column(Integer, ForeignKey(\"users.id\"), nullable=False)\n    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)\n    expires_at = Column(DateTime, nullable=False)\n    # relationship\n    user = relationship(\"User\", back_populates=\"refresh_tokens\")\nclass User(Base):",
         "detail": "backend.app.models.user",
         "documentation": {}
     },
@@ -1718,7 +3691,7 @@
         "kind": 6,
         "importPath": "backend.app.models.user",
         "description": "backend.app.models.user",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id= Column(Integer, primary_key=True, index=True)\n    first_name= Column(String, nullable=False)\n    last_name= Column(String, nullable=True)\n    email= Column(String, unique=True, index=True, nullable=False)\n    password_hash= Column(String, nullable=False)\n    is_verified= Column(Boolean, default=False)\n    verification_code= Column(String, nullable=True)\n    verification_code_expires_at= Column(DateTime, nullable=True)",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = Column(Integer, primary_key=True, index=True)\n    first_name = Column(String, nullable=False)\n    last_name = Column(String, nullable=True)\n    email = Column(String, unique=True, index=True, nullable=False)\n    password_hash = Column(String, nullable=False)\n    is_verified = Column(Boolean, default=False)\n    verification_code = Column(String, nullable=True)\n    verification_code_expires_at = Column(DateTime, nullable=True)",
         "detail": "backend.app.models.user",
         "documentation": {}
     },
@@ -1738,6 +3711,123 @@
         "description": "backend.app.responses.user",
         "peekOfCode": "class UserResponse(BaseResponse):\n    first_name: str\n    last_name: Optional[str] = None\n    email: EmailStr",
         "detail": "backend.app.responses.user",
+        "documentation": {}
+    },
+    {
+        "label": "BasicScanCreate",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class BasicScanCreate(BaseModel):\n    target_url: HttpUrl = Field(..., description=\"The target URL to scan\")\n    @validator('target_url')\n    def validate_url(cls, v):\n        url_str = str(v)\n        if not url_str.startswith(('http://', 'https://')):\n            raise ValueError('URL must start with http:// or https://')\n        return url_str\n    class Config:\n        json_schema_extra = {",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "FullScanCreate",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class FullScanCreate(BaseModel):\n    target_url: HttpUrl = Field(..., description=\"The target URL to scan (must be a verified domain)\")\n    @validator('target_url')\n    def validate_url(cls, v):\n        url_str = str(v)\n        if not url_str.startswith(('http://', 'https://')):\n            raise ValueError('URL must start with http:// or https://')\n        return url_str\n    class Config:\n        json_schema_extra = {",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanUpdate",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class ScanUpdate(BaseModel):\n    status: Optional[ScanStatus] = None\n    progress_percentage: Optional[int] = Field(None, ge=0, le=100)\n    current_step: Optional[str] = None\n    error_message: Optional[str] = None\nclass ScanAlertSummaryResponse(BaseModel):\n    \"\"\"Lightweight alert response for listing\"\"\"\n    id: int\n    alert_name: str\n    risk_level: RiskLevel",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanAlertSummaryResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class ScanAlertSummaryResponse(BaseModel):\n    \"\"\"Lightweight alert response for listing\"\"\"\n    id: int\n    alert_name: str\n    risk_level: RiskLevel\n    confidence: str\n    url: str\n    method: Optional[str] = None\n    cwe_id: Optional[str] = None\n    created_at: datetime",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanAlertResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class ScanAlertResponse(BaseModel):\n    \"\"\"Detailed alert response with full information\"\"\"\n    id: int\n    alert_name: str\n    risk_level: RiskLevel\n    confidence: str\n    description: Optional[str] = None\n    solution: Optional[str] = None\n    reference: Optional[str] = None\n    cwe_id: Optional[str] = None",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class ScanResponse(BaseModel):\n    id: int\n    user_id: int\n    target_url: str\n    scan_type: ScanType\n    status: ScanStatus\n    celery_task_id: Optional[str] = None\n    progress_percentage: int\n    current_step: Optional[str] = None\n    total_alerts: int",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanDetailResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class ScanDetailResponse(ScanResponse):\n    \"\"\"Scan details with summary alerts (lightweight)\"\"\"\n    alerts: List[ScanAlertSummaryResponse] = []\n    class Config:\n        from_attributes = True\nclass ScanFullDetailResponse(ScanResponse):\n    \"\"\"Scan details with full alert information (detailed)\"\"\"\n    alerts: List[ScanAlertResponse] = []\n    class Config:\n        from_attributes = True",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanFullDetailResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class ScanFullDetailResponse(ScanResponse):\n    \"\"\"Scan details with full alert information (detailed)\"\"\"\n    alerts: List[ScanAlertResponse] = []\n    class Config:\n        from_attributes = True\nclass ScanListResponse(BaseModel):\n    scans: List[ScanResponse]\n    total: int\n    page: int\n    page_size: int",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanListResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class ScanListResponse(BaseModel):\n    scans: List[ScanResponse]\n    total: int\n    page: int\n    page_size: int\nclass ScanStatsResponse(BaseModel):\n    total_scans: int\n    pending_scans: int\n    in_progress_scans: int\n    completed_scans: int",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "ScanStatsResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class ScanStatsResponse(BaseModel):\n    total_scans: int\n    pending_scans: int\n    in_progress_scans: int\n    completed_scans: int\n    failed_scans: int\n    total_vulnerabilities: int\n    high_risk_vulnerabilities: int\n    medium_risk_vulnerabilities: int\n    low_risk_vulnerabilities: int",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousScanCreate",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class AnonymousScanCreate(BaseModel):\n    \"\"\"Request schema for anonymous basic scan (no authentication required)\"\"\"\n    target_url: HttpUrl = Field(..., description=\"The target URL to scan\")\n    @validator('target_url')\n    def validate_url(cls, v):\n        url_str = str(v)\n        if not url_str.startswith(('http://', 'https://')):\n            raise ValueError('URL must start with http:// or https://')\n        return url_str\n    class Config:",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousAlertResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class AnonymousAlertResponse(BaseModel):\n    \"\"\"Alert response for anonymous scans\"\"\"\n    alert_name: str\n    risk_level: RiskLevel\n    confidence: str\n    description: Optional[str] = None\n    solution: Optional[str] = None\n    reference: Optional[str] = None\n    cwe_id: Optional[str] = None\n    wasc_id: Optional[str] = None",
+        "detail": "backend.app.schemas.scan",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousScanResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.scan",
+        "description": "backend.app.schemas.scan",
+        "peekOfCode": "class AnonymousScanResponse(BaseModel):\n    \"\"\"Response schema for anonymous scan results\"\"\"\n    success: bool\n    message: str\n    scan_data: Dict[str, Any] = Field(..., description=\"Scan results and metadata\")\n    class Config:\n        json_schema_extra = {\n            \"example\": {\n                \"success\": True,\n                \"message\": \"Scan completed successfully\",",
+        "detail": "backend.app.schemas.scan",
         "documentation": {}
     },
     {
@@ -1804,12 +3894,84 @@
         "documentation": {}
     },
     {
+        "label": "AnonymousScannerService",
+        "kind": 6,
+        "importPath": "backend.app.services.anonymous_scanner",
+        "description": "backend.app.services.anonymous_scanner",
+        "peekOfCode": "class AnonymousScannerService:\n    \"\"\"Service for performing anonymous scans without DB persistence\"\"\"\n    # MVP Categories - Match your 4 main vulnerability types\n    # Based on actual OWASP ZAP alert names\n    MVP_CATEGORIES = {\n        \"sql_injection\": {\n            \"name\": \"SQL Injection (SQLi)\",\n            \"keywords\": [\n                \"sql injection\",\n                \"sql\",",
+        "detail": "backend.app.services.anonymous_scanner",
+        "documentation": {}
+    },
+    {
+        "label": "ScanMetrics",
+        "kind": 6,
+        "importPath": "backend.app.services.metrics",
+        "description": "backend.app.services.metrics",
+        "peekOfCode": "class ScanMetrics:\n    \"\"\"Metrics for a single scan\"\"\"\n    scan_id: int\n    started_at: float\n    completed_at: Optional[float] = None\n    duration_seconds: Optional[float] = None\n    total_alerts: int = 0\n    high_risk_count: int = 0\n    medium_risk_count: int = 0\n    low_risk_count: int = 0",
+        "detail": "backend.app.services.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "MetricsCollector",
+        "kind": 6,
+        "importPath": "backend.app.services.metrics",
+        "description": "backend.app.services.metrics",
+        "peekOfCode": "class MetricsCollector:\n    \"\"\"\n    Singleton metrics collector for scan performance monitoring.\n    Thread-safe implementation for concurrent scan metrics.\n    \"\"\"\n    _instance: Optional[\"MetricsCollector\"] = None\n    _lock = Lock()\n    def __init__(self):\n        self._scan_metrics: Dict[int, ScanMetrics] = {}\n        self._completed_scans: list = []",
+        "detail": "backend.app.services.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "metrics_collector",
+        "kind": 5,
+        "importPath": "backend.app.services.metrics",
+        "description": "backend.app.services.metrics",
+        "peekOfCode": "metrics_collector = MetricsCollector.get_instance()",
+        "detail": "backend.app.services.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "ScannerInstanceManager",
+        "kind": 6,
+        "importPath": "backend.app.services.scanner_manager",
+        "description": "backend.app.services.scanner_manager",
+        "peekOfCode": "class ScannerInstanceManager:\n    \"\"\"\n    Manages ZAP scanner connections with efficient resource pooling.\n    Architecture:\n    - Single persistent ZAP connection pool\n    - Per-scan context isolation for concurrent operations\n    - Thread-safe with lock protection\n    - Automatic health checking and reconnection\n    \"\"\"\n    _instance: Optional[\"ScannerInstanceManager\"] = None",
+        "detail": "backend.app.services.scanner_manager",
+        "documentation": {}
+    },
+    {
+        "label": "scanner_manager",
+        "kind": 5,
+        "importPath": "backend.app.services.scanner_manager",
+        "description": "backend.app.services.scanner_manager",
+        "peekOfCode": "scanner_manager = ScannerInstanceManager.get_instance()",
+        "detail": "backend.app.services.scanner_manager",
+        "documentation": {}
+    },
+    {
+        "label": "ZAPScanner",
+        "kind": 6,
+        "importPath": "backend.app.services.zap_scanner",
+        "description": "backend.app.services.zap_scanner",
+        "peekOfCode": "class ZAPScanner:\n    \"\"\"\n    OWASP ZAP Scanner with Docker integration.\n    Supports multiple scan types\n    \"\"\"\n    def __init__(\n        self,\n        zap_host: str = ZAPConfig.ZAP_HOST,\n        zap_port: int = ZAPConfig.ZAP_PORT,\n        zap_api_key: str = ZAPConfig.ZAP_API_KEY,",
+        "detail": "backend.app.services.zap_scanner",
+        "documentation": {}
+    },
+    {
         "label": "verify_domain_task",
         "kind": 2,
         "importPath": "backend.app.tasks.domain_verification",
         "description": "backend.app.tasks.domain_verification",
         "peekOfCode": "def verify_domain_task(domain: str, user_id: int, PREFIX: str = AppConfig.DOMAIN_VERIFICATION_TOKEN_PREFIX):\n    logger.info(f\"Starting domain verification task for domain: {domain}, user_id: {user_id}\")\n    try:\n        # Create a fresh resolver instance (no cache, no stale data)\n        resolver = dns.resolver.Resolver()\n        resolver.cache = None\n        resolver.nameservers = [\"1.1.1.1\", \"8.8.8.8\"]  # Use reliable public DNS servers\n        resolver.timeout = 3 # Per DNS server timeout {seconds}\n        resolver.lifetime = 5 # Overall query timeout {seconds}\n        # Fetch fresh TXT records",
         "detail": "backend.app.tasks.domain_verification",
+        "documentation": {}
+    },
+    {
+        "label": "scheduled_domain_maintenance",
+        "kind": 2,
+        "importPath": "backend.app.tasks.domain_verification_scheduled",
+        "description": "backend.app.tasks.domain_verification_scheduled",
+        "peekOfCode": "def scheduled_domain_maintenance():\n    \"\"\"\n    Periodic task to:\n    - Recheck all verified domains\n    - Delete unverified domains older than 24 hours\n    \"\"\"\n    logger.info(\"Starting scheduled domain maintenance...\")\n    try:\n        with SessionLocal() as session:\n            all_sites = session.execute(select(Site)).scalars().all()",
+        "detail": "backend.app.tasks.domain_verification_scheduled",
         "documentation": {}
     },
     {
@@ -1822,20 +3984,92 @@
         "documentation": {}
     },
     {
-        "label": "logger",
-        "kind": 5,
+        "label": "ScanTask",
+        "kind": 6,
+        "importPath": "backend.app.tasks.scan_tasks",
+        "description": "backend.app.tasks.scan_tasks",
+        "peekOfCode": "class ScanTask(Task):\n    \"\"\"Base task with error handling and cleanup\"\"\"\n    def on_failure(self, exc, task_id, args, kwargs, einfo):\n        \"\"\"Handle task failure - just log, don't try to update DB\"\"\"\n        logger.error(f\"Task {task_id} failed: {exc}\")\n        # Don't try to update DB here as it causes connection conflicts\n        # The scan will remain in IN_PROGRESS state and can be cleaned up separately\n@celery_app.task(bind=True, base=ScanTask, name=\"app.tasks.scan_tasks.run_scan\")\ndef run_scan(self, scan_id: int, target_url: Optional[str] = None) -> Dict[str, Any]:\n    \"\"\"",
+        "detail": "backend.app.tasks.scan_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "run_scan",
+        "kind": 2,
+        "importPath": "backend.app.tasks.scan_tasks",
+        "description": "backend.app.tasks.scan_tasks",
+        "peekOfCode": "def run_scan(self, scan_id: int, target_url: Optional[str] = None) -> Dict[str, Any]:\n    \"\"\"\n    Execute a security scan using OWASP ZAP\n    Args:\n        scan_id: Database ID of the scan\n        target_url: Target URL being scanned (displayed in Flower kwargs)\n    Returns:\n        Dictionary with scan results summary\n    \"\"\"\n    logger.info(f\"Starting scan task for scan_id: {scan_id}, target: {target_url or 'Unknown'}\")",
+        "detail": "backend.app.tasks.scan_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "cancel_scan",
+        "kind": 2,
+        "importPath": "backend.app.tasks.scan_tasks",
+        "description": "backend.app.tasks.scan_tasks",
+        "peekOfCode": "def cancel_scan(self, scan_id: int) -> Dict[str, Any]:\n    \"\"\"\n    Cancel a running scan\n    Args:\n        scan_id: Database ID of the scan\n    Returns:\n        Dictionary with cancellation status\n    \"\"\"\n    logger.info(f\"Cancelling scan task for scan_id: {scan_id}\")\n    loop = asyncio.new_event_loop()",
+        "detail": "backend.app.tasks.scan_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "extract_domain_from_url",
+        "kind": 2,
+        "importPath": "backend.app.utils.domain_utils",
+        "description": "backend.app.utils.domain_utils",
+        "peekOfCode": "def extract_domain_from_url(url: str) -> Optional[str]:\n    \"\"\"\n    Extract the domain (hostname) from a URL.\n    Args:\n        url: Full URL (e.g., \"https://example.com/path?query=1\")\n    Returns:\n        Domain without protocol or path (e.g., \"example.com\")\n        None if URL is invalid\n    Examples:\n        >>> extract_domain_from_url(\"https://example.com/test\")",
+        "detail": "backend.app.utils.domain_utils",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_domain",
+        "kind": 2,
+        "importPath": "backend.app.utils.domain_utils",
+        "description": "backend.app.utils.domain_utils",
+        "peekOfCode": "def normalize_domain(domain: str) -> str:\n    \"\"\"\n    Normalize a domain name for consistent comparison.\n    Args:\n        domain: Domain name (e.g., \"WWW.Example.COM\")\n    Returns:\n        Normalized domain (e.g., \"example.com\")\n    Examples:\n        >>> normalize_domain(\"WWW.Example.COM\")\n        'example.com'",
+        "detail": "backend.app.utils.domain_utils",
+        "documentation": {}
+    },
+    {
+        "label": "is_subdomain_of",
+        "kind": 2,
+        "importPath": "backend.app.utils.domain_utils",
+        "description": "backend.app.utils.domain_utils",
+        "peekOfCode": "def is_subdomain_of(subdomain: str, parent_domain: str) -> bool:\n    \"\"\"\n    Check if subdomain is a subdomain of parent_domain.\n    Args:\n        subdomain: Potential subdomain (e.g., \"api.example.com\")\n        parent_domain: Parent domain (e.g., \"example.com\")\n    Returns:\n        True if subdomain is a subdomain of parent_domain\n    Examples:\n        >>> is_subdomain_of(\"api.example.com\", \"example.com\")",
+        "detail": "backend.app.utils.domain_utils",
+        "documentation": {}
+    },
+    {
+        "label": "StructuredFormatter",
+        "kind": 6,
         "importPath": "backend.app.utils.logger",
         "description": "backend.app.utils.logger",
-        "peekOfCode": "logger = logging.getLogger()\n# create formatter\nformatter = logging.Formatter(\n    fmt=\"%(asctime)s - %(levelname)s - %(message)s\",\n)\n# create handlers\nstream_handler = logging.StreamHandler(sys.stdout)\nfile_handler = logging.FileHandler(\"app.log\")\n# set formatters\nstream_handler.setFormatter(formatter)",
+        "peekOfCode": "class StructuredFormatter(logging.Formatter):\n    \"\"\"\n    Structured JSON formatter for better log parsing and analysis.\n    Outputs logs in JSON format with context fields.\n    \"\"\"\n    def format(self, record: logging.LogRecord) -> str:\n        log_data: Dict[str, Any] = {\n            \"timestamp\": datetime.utcnow().isoformat() + \"Z\",\n            \"level\": record.levelname,\n            \"logger\": record.name,",
         "detail": "backend.app.utils.logger",
         "documentation": {}
     },
     {
-        "label": "formatter",
+        "label": "HumanReadableFormatter",
+        "kind": 6,
+        "importPath": "backend.app.utils.logger",
+        "description": "backend.app.utils.logger",
+        "peekOfCode": "class HumanReadableFormatter(logging.Formatter):\n    \"\"\"Human-readable formatter for console output\"\"\"\n    def __init__(self):\n        super().__init__(\n            fmt=\"%(asctime)s - %(levelname)-8s - [%(name)s:%(funcName)s:%(lineno)d] - %(message)s\",\n            datefmt=\"%Y-%m-%d %H:%M:%S\"\n        )\n# Create formatters\nstructured_formatter = StructuredFormatter()\nhuman_formatter = HumanReadableFormatter()",
+        "detail": "backend.app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "structured_formatter",
         "kind": 5,
         "importPath": "backend.app.utils.logger",
         "description": "backend.app.utils.logger",
-        "peekOfCode": "formatter = logging.Formatter(\n    fmt=\"%(asctime)s - %(levelname)s - %(message)s\",\n)\n# create handlers\nstream_handler = logging.StreamHandler(sys.stdout)\nfile_handler = logging.FileHandler(\"app.log\")\n# set formatters\nstream_handler.setFormatter(formatter)\nfile_handler.setFormatter(formatter)\n# add handlers to the logger",
+        "peekOfCode": "structured_formatter = StructuredFormatter()\nhuman_formatter = HumanReadableFormatter()\n# Create console handler (human-readable for development)\nstream_handler = logging.StreamHandler(sys.stdout)\nstream_handler.setFormatter(human_formatter)\nstream_handler.setLevel(logging.INFO)\n# Try to add file handlers (structured JSON for production)\nhandlers = [stream_handler]\n# Ensure logs directory exists\nlog_dir = Path(\"logs\")",
+        "detail": "backend.app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "human_formatter",
+        "kind": 5,
+        "importPath": "backend.app.utils.logger",
+        "description": "backend.app.utils.logger",
+        "peekOfCode": "human_formatter = HumanReadableFormatter()\n# Create console handler (human-readable for development)\nstream_handler = logging.StreamHandler(sys.stdout)\nstream_handler.setFormatter(human_formatter)\nstream_handler.setLevel(logging.INFO)\n# Try to add file handlers (structured JSON for production)\nhandlers = [stream_handler]\n# Ensure logs directory exists\nlog_dir = Path(\"logs\")\ntry:",
         "detail": "backend.app.utils.logger",
         "documentation": {}
     },
@@ -1844,16 +4078,34 @@
         "kind": 5,
         "importPath": "backend.app.utils.logger",
         "description": "backend.app.utils.logger",
-        "peekOfCode": "stream_handler = logging.StreamHandler(sys.stdout)\nfile_handler = logging.FileHandler(\"app.log\")\n# set formatters\nstream_handler.setFormatter(formatter)\nfile_handler.setFormatter(formatter)\n# add handlers to the logger\nlogger.handlers = [stream_handler, file_handler]\n# set log-level\nlogger.setLevel(logging.INFO)\n# Silence watchfiles spam",
+        "peekOfCode": "stream_handler = logging.StreamHandler(sys.stdout)\nstream_handler.setFormatter(human_formatter)\nstream_handler.setLevel(logging.INFO)\n# Try to add file handlers (structured JSON for production)\nhandlers = [stream_handler]\n# Ensure logs directory exists\nlog_dir = Path(\"logs\")\ntry:\n    log_dir.mkdir(exist_ok=True, parents=True)\n    # Main application log (JSON format)",
         "detail": "backend.app.utils.logger",
         "documentation": {}
     },
     {
-        "label": "file_handler",
+        "label": "handlers",
         "kind": 5,
         "importPath": "backend.app.utils.logger",
         "description": "backend.app.utils.logger",
-        "peekOfCode": "file_handler = logging.FileHandler(\"app.log\")\n# set formatters\nstream_handler.setFormatter(formatter)\nfile_handler.setFormatter(formatter)\n# add handlers to the logger\nlogger.handlers = [stream_handler, file_handler]\n# set log-level\nlogger.setLevel(logging.INFO)\n# Silence watchfiles spam\nlogging.getLogger(\"watchfiles\").propagate = False",
+        "peekOfCode": "handlers = [stream_handler]\n# Ensure logs directory exists\nlog_dir = Path(\"logs\")\ntry:\n    log_dir.mkdir(exist_ok=True, parents=True)\n    # Main application log (JSON format)\n    app_log_handler = logging.FileHandler(log_dir / \"app.log\")\n    app_log_handler.setFormatter(structured_formatter)\n    app_log_handler.setLevel(logging.INFO)\n    handlers.append(app_log_handler)",
+        "detail": "backend.app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "log_dir",
+        "kind": 5,
+        "importPath": "backend.app.utils.logger",
+        "description": "backend.app.utils.logger",
+        "peekOfCode": "log_dir = Path(\"logs\")\ntry:\n    log_dir.mkdir(exist_ok=True, parents=True)\n    # Main application log (JSON format)\n    app_log_handler = logging.FileHandler(log_dir / \"app.log\")\n    app_log_handler.setFormatter(structured_formatter)\n    app_log_handler.setLevel(logging.INFO)\n    handlers.append(app_log_handler)\n    # Error log (JSON format, errors only)\n    error_log_handler = logging.FileHandler(log_dir / \"error.log\")",
+        "detail": "backend.app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "backend.app.utils.logger",
+        "description": "backend.app.utils.logger",
+        "peekOfCode": "logger = logging.getLogger()\nlogger.handlers = handlers\nlogger.setLevel(logging.DEBUG)  # Capture all levels, handlers will filter\n# Create specialized loggers\nscan_logger = logging.getLogger(\"scan\")\nscan_logger.setLevel(logging.DEBUG)\nmetrics_logger = logging.getLogger(\"metrics\")\nmetrics_logger.setLevel(logging.INFO)\n# Silence noisy loggers\nlogging.getLogger(\"watchfiles\").propagate = False",
         "detail": "backend.app.utils.logger",
         "documentation": {}
     },
@@ -1862,7 +4114,25 @@
         "kind": 5,
         "importPath": "backend.app.utils.logger",
         "description": "backend.app.utils.logger",
-        "peekOfCode": "logger.handlers = [stream_handler, file_handler]\n# set log-level\nlogger.setLevel(logging.INFO)\n# Silence watchfiles spam\nlogging.getLogger(\"watchfiles\").propagate = False",
+        "peekOfCode": "logger.handlers = handlers\nlogger.setLevel(logging.DEBUG)  # Capture all levels, handlers will filter\n# Create specialized loggers\nscan_logger = logging.getLogger(\"scan\")\nscan_logger.setLevel(logging.DEBUG)\nmetrics_logger = logging.getLogger(\"metrics\")\nmetrics_logger.setLevel(logging.INFO)\n# Silence noisy loggers\nlogging.getLogger(\"watchfiles\").propagate = False\nlogging.getLogger(\"urllib3\").setLevel(logging.WARNING)",
+        "detail": "backend.app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "scan_logger",
+        "kind": 5,
+        "importPath": "backend.app.utils.logger",
+        "description": "backend.app.utils.logger",
+        "peekOfCode": "scan_logger = logging.getLogger(\"scan\")\nscan_logger.setLevel(logging.DEBUG)\nmetrics_logger = logging.getLogger(\"metrics\")\nmetrics_logger.setLevel(logging.INFO)\n# Silence noisy loggers\nlogging.getLogger(\"watchfiles\").propagate = False\nlogging.getLogger(\"urllib3\").setLevel(logging.WARNING)\nlogging.getLogger(\"docker\").setLevel(logging.WARNING)",
+        "detail": "backend.app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "metrics_logger",
+        "kind": 5,
+        "importPath": "backend.app.utils.logger",
+        "description": "backend.app.utils.logger",
+        "peekOfCode": "metrics_logger = logging.getLogger(\"metrics\")\nmetrics_logger.setLevel(logging.INFO)\n# Silence noisy loggers\nlogging.getLogger(\"watchfiles\").propagate = False\nlogging.getLogger(\"urllib3\").setLevel(logging.WARNING)\nlogging.getLogger(\"docker\").setLevel(logging.WARNING)",
         "detail": "backend.app.utils.logger",
         "documentation": {}
     },
@@ -1871,8 +4141,17 @@
         "kind": 5,
         "importPath": "backend.app.utils.logger",
         "description": "backend.app.utils.logger",
-        "peekOfCode": "logging.getLogger(\"watchfiles\").propagate = False",
+        "peekOfCode": "logging.getLogger(\"watchfiles\").propagate = False\nlogging.getLogger(\"urllib3\").setLevel(logging.WARNING)\nlogging.getLogger(\"docker\").setLevel(logging.WARNING)",
         "detail": "backend.app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "ZAPReportFormatter",
+        "kind": 6,
+        "importPath": "backend.app.utils.report_formatter",
+        "description": "backend.app.utils.report_formatter",
+        "peekOfCode": "class ZAPReportFormatter:\n    \"\"\"Formats scan results into ZAP-compatible JSON and text report formats\"\"\"\n    @staticmethod\n    def format_scan_to_json(scan: Scan, alerts: List[ScanAlert]) -> Dict[str, Any]:\n        \"\"\"\n        Convert scan and alerts to ZAP JSON format\n        Args:\n            scan: Scan database model instance\n            alerts: List of ScanAlert instances\n        Returns:",
+        "detail": "backend.app.utils.report_formatter",
         "documentation": {}
     },
     {
@@ -1880,7 +4159,7 @@
         "kind": 5,
         "importPath": "backend.app.main",
         "description": "backend.app.main",
-        "peekOfCode": "version = \"v1\"\napp = FastAPI(\n    version=version,\n)\n# origins = [\n#     \"http://localhost:8000\",  # your frontend\n#     \"http://127.0.0.1:8000\",\n# ]\n# app.add_middleware(\n#     CORSMiddleware,",
+        "peekOfCode": "version = \"v1\"\napp = FastAPI(\n    title=\"Hack Your Own Web API\",\n    description=\"Security scanning platform API with OWASP ZAP integration\",\n    version=version,\n)\n# CORS Configuration\norigins = [\n    \"http://localhost:3000\",  # React frontend\n    \"http://127.0.0.1:3000\",",
         "detail": "backend.app.main",
         "documentation": {}
     },
@@ -1889,7 +4168,16 @@
         "kind": 5,
         "importPath": "backend.app.main",
         "description": "backend.app.main",
-        "peekOfCode": "app = FastAPI(\n    version=version,\n)\n# origins = [\n#     \"http://localhost:8000\",  # your frontend\n#     \"http://127.0.0.1:8000\",\n# ]\n# app.add_middleware(\n#     CORSMiddleware,\n#     allow_origins=origins,",
+        "peekOfCode": "app = FastAPI(\n    title=\"Hack Your Own Web API\",\n    description=\"Security scanning platform API with OWASP ZAP integration\",\n    version=version,\n)\n# CORS Configuration\norigins = [\n    \"http://localhost:3000\",  # React frontend\n    \"http://127.0.0.1:3000\",\n    \"http://localhost:8000\",  # API docs",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "origins",
+        "kind": 5,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "origins = [\n    \"http://localhost:3000\",  # React frontend\n    \"http://127.0.0.1:3000\",\n    \"http://localhost:8000\",  # API docs\n    \"http://127.0.0.1:8000\",\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,",
         "detail": "backend.app.main",
         "documentation": {}
     },
@@ -1898,7 +4186,7 @@
         "kind": 5,
         "importPath": "backend.app.worker",
         "description": "backend.app.worker",
-        "peekOfCode": "celery = celery_app",
+        "peekOfCode": "celery = celery_app\nif __name__ == \"__main__\":\n    celery_app.start()",
         "detail": "backend.app.worker",
         "documentation": {}
     }
