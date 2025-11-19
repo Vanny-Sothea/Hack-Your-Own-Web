@@ -1,6 +1,6 @@
 services:
   - type: redis
-    name: angkoro-redis
+    name: hyow-redis
     plan: free
     ipAllowList:
       - source: 0.0.0.0/0
@@ -25,17 +25,20 @@ services:
         value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
       - key: REDIS_URL
       # pull connection string from the managed Redis service created above
-        fromDatabase:
-          name: angkoro-redis
+        fromService:
+          type: redis
+          name: hyow-redis
           property: connectionString
       - key: CELERY_BROKER_URL
       # Celery broker/result backend will use the same Redis connection string
-        fromDatabase:
-          name: angkoro-redis
+        fromService:
+          type: redis
+          name: hyow-redis
           property: connectionString
       - key: CELERY_RESULT_BACKEND
-        fromDatabase:
-          name: angkoro-redis
+        fromService:
+          type: redis
+          name: hyow-redis
           property: connectionString
       - key: JWT_SECRET
         value: "uB8D8T4ic5027Qc7ldl68M6f+C60PaKfMI8MlBnZzzaCcZXK7mwsXSracY0EzmWQ"
@@ -96,12 +99,14 @@ services:
       - key: DATABASE_URL
         value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
       - key: CELERY_BROKER_URL
-        fromDatabase:
-          name: angkoro-redis
+        fromService:
+          type: redis
+          name: hyow-redis
           property: connectionString
       - key: CELERY_RESULT_BACKEND
-        fromDatabase:
-          name: angkoro-redis
+        fromService:
+          type: redis
+          name: hyow-redis
           property: connectionString
 
   - type: worker
@@ -117,12 +122,14 @@ services:
       - key: DATABASE_URL
         value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
       - key: CELERY_BROKER_URL
-        fromDatabase:
-          name: angkoro-redis
+        fromService:
+          type: redis
+          name: hyow-redis
           property: connectionString
       - key: CELERY_RESULT_BACKEND
-        fromDatabase:
-          name: angkoro-redis
+        fromService:
+          type: redis
+          name: hyow-redis
           property: connectionString
 
   - type: worker
@@ -138,10 +145,12 @@ services:
       - key: DATABASE_URL
         value: "postgresql+asyncpg://neondb_owner:npg_i5HN8mWuArgn@ep-plain-snow-adfu4a5y-pooler.c-2.us-east-1.aws.neon.tech/neondb"
       - key: CELERY_BROKER_URL
-        fromDatabase:
-          name: angkoro-redis
+        fromService:
+          type: redis
+          name: hyow-redis
           property: connectionString
       - key: CELERY_RESULT_BACKEND
-        fromDatabase:
-          name: angkoro-redis
+        fromService:
+          type: redis
+          name: hyow-redis
           property: connectionString
