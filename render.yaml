@@ -11,8 +11,8 @@ services:
     dockerContext: ./backend
     dockerfilePath: backend/Dockerfile
     branch: main
-    # health check will hit FastAPI health route
-    healthCheckPath: /api/v1/health
+    # # health check will hit FastAPI health route
+    # healthCheckPath: /api/v1/health
     autoDeploy: true
     plan: free
     envVars:
