@@ -5,14 +5,11 @@ services:
     ipAllowList:
       - source: 0.0.0.0/0
 
-  - type: web
+  - type: image
     name: hyow-zap
-    env: docker
-    dockerImage: ghcr.io/zaproxy/zaproxy:stable
-    branch: main
-    plan: free
+    plan: starter
     startCommand: >
-      zap.sh -daemon -host 0.0.0.0 -port $PORT -Xmx6g
+      zap.sh -daemon -host 0.0.0.0 -port $PORT
       -config api.key=$ZAP_API_KEY
       -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
       -config api.disablekey=false
@@ -20,6 +17,8 @@ services:
     envVars:
       - key: ZAP_API_KEY
         value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
+    registry:
+      image: ghcr.io/zaproxy/zaproxy:stable
 
   - type: web
     name: hyow-api
