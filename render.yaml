@@ -5,21 +5,6 @@ services:
     ipAllowList:
       - source: 0.0.0.0/0
 
-  - type: image
-    name: hyow-zap
-    plan: starter
-    startCommand: >
-      zap.sh -daemon -host 0.0.0.0 -port $PORT
-      -config api.key=$ZAP_API_KEY
-      -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
-      -config api.disablekey=false
-      -addonupdate -addoninstall pscanrules -addoninstall ascanrules
-    envVars:
-      - key: ZAP_API_KEY
-        value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
-    registry:
-      image: ghcr.io/zaproxy/zaproxy:stable
-
   - type: web
     name: hyow-api
     env: docker
@@ -80,15 +65,11 @@ services:
         value: "True"
       - key: ZAP_URL
         # Point to the ZAP service using the Render-assigned hostname and port
-        value: "http://hyow-zap.onrender.com:$PORT"
+        value: "https://zap-service-9zv2.onrender.com:10000"
       - key: ZAP_API_KEY
         value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
-      - key: DOMAIN_VERIFICATION_TOKEN_PREFIX
-        value: "hackyourownweb-verify="
       - key: USE_DOCKER_ZAP
         value: "False"
-      - key: ZAP_DOCKER_IMAGE
-        value: "ghcr.io/zaproxy/zaproxy:stable"
       - key: ZAP_PASSIVE_SCAN_TIMEOUT
         value: "600"
       - key: ZAP_SPIDER_TIMEOUT
