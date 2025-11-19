@@ -36,4 +36,14 @@ USER appuser
 EXPOSE 8000
 
 # Default command (can be overridden in docker-compose)
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "\
+if [ \"$WORKER_TYPE\" = 'domain_worker' ]; then \
+    celery -A app.core.celery_app worker -Q domain_verification_queue --loglevel=info --concurrency=2 -n domain_worker@%h -E; \
+elif [ \"$WORKER_TYPE\" = 'scan_worker' ]; then \
+    celery -A app.core.celery_app worker -Q scan_queue --loglevel=info --concurrency=3 -n scan_worker@%h -E; \
+elif [ \"$WORKER_TYPE\" = 'beat' ]; then \
+    celery -A app.core.celery_app beat --loglevel=info; \
+else \
+    uvicorn app.main:app --host 0.0.0.0 --port 8000; \
+fi"]
