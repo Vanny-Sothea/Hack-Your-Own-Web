@@ -8,7 +8,7 @@ services:
   - type: web
     name: hyow-zap
     env: docker
-    image: ghcr.io/zaproxy/zaproxy:stable
+    dockerImage: ghcr.io/zaproxy/zaproxy:stable
     branch: main
     plan: free
     startCommand: >
