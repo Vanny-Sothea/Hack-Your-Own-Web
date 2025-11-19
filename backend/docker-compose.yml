@@ -18,7 +18,7 @@ services:
 
   # OWASP ZAP - Security Scanner (Persistent Service)
   zap:
-    image: ghcr.io/zaproxy/zaproxy:stable
+    dockerImage: ghcr.io/zaproxy/zaproxy:stable
     container_name: hyow-zap
     environment:
       - ZAP_API_KEY=${ZAP_API_KEY:-15d12de6-553b-4af7-bd5c-22599f8876f2}

@@ -11,7 +11,6 @@ services:
     image: ghcr.io/zaproxy/zaproxy:stable
     branch: main
     plan: free
-    description: "OWASP ZAP daemon for application scans"
     startCommand: >
       zap.sh -daemon -host 0.0.0.0 -port $PORT -Xmx6g
       -config api.key=$ZAP_API_KEY
@@ -30,7 +29,6 @@ services:
     # health check will hit FastAPI health route
     healthCheckPath: /api/v1/health
     autoDeploy: true
-    description: "HYOW backend API (FastAPI)"
     plan: free
     envVars:
       - key: ENV
@@ -122,10 +120,6 @@ services:
         fromDatabase:
           name: angkoro-redis
           property: connectionString
-      - key: ZAP_URL
-        value: "http://hyow-zap.onrender.com:$PORT"
-      - key: ZAP_API_KEY
-        value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
 
   - type: worker
     name: celery_scan_worker
@@ -146,10 +140,6 @@ services:
         fromDatabase:
           name: angkoro-redis
           property: connectionString
-      - key: ZAP_URL
-        value: "http://hyow-zap.onrender.com:$PORT"
-      - key: ZAP_API_KEY
-        value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
 
   - type: worker
     name: celery_beat
@@ -170,7 +160,3 @@ services:
         fromDatabase:
           name: angkoro-redis
           property: connectionString
-      - key: ZAP_URL
-        value: "http://hyow-zap.onrender.com:$PORT"
-      - key: ZAP_API_KEY
-        value: "15d12de6-553b-4af7-bd5c-22599f8876f2"
