@@ -40,22 +40,21 @@ def verify_domain_task(domain: str, user_id: int, PREFIX: str = AppConfig.DOMAIN
                 token_candidate = txt
                 if token_candidate.startswith(PREFIX):
                     token_candidate = token_candidate[len(PREFIX):]
-                if site.verification_token == token_candidate:
+                if site.verification_token == token_candidate:  # type: ignore[comparison-overlap]
                     found = True
                     break
 
             if found:
-                site.is_verified = True
-                # site.verified_at = datetime.utcnow()
+                site.is_verified = True  # type: ignore[assignment]
                 session.add(site)
                 session.commit()
 
-                # Remove other users’ unverified entries for this domain
+                # Remove other users' unverified entries for this domain
                 session.execute(
                     delete(Site).where(
                         Site.domain == domain,
                         Site.user_id != user_id,
-                        Site.is_verified == False
+                        Site.is_verified == False  # type: ignore[comparison-overlap]
                     )
                 )
                 session.commit()
@@ -64,8 +63,7 @@ def verify_domain_task(domain: str, user_id: int, PREFIX: str = AppConfig.DOMAIN
                 return True
             else:
                 # Explicitly mark as unverified (for re-verification)
-                site.is_verified = False
-                # site.verified_at = None
+                site.is_verified = False  # type: ignore[assignment]
                 session.add(site)
                 session.commit()
 
@@ -88,7 +86,7 @@ def verify_domain_task(domain: str, user_id: int, PREFIX: str = AppConfig.DOMAIN
             )
         ).scalars().first()
         if site:
-            site.is_verified = False
+            site.is_verified = False  # type: ignore[assignment]
             # site.verified_at = None
             session.add(site)
             session.commit()

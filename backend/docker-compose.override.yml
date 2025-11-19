@@ -1,17 +1,17 @@
 services:
+  # Development overrides for API
   api:
-    env_file: .env.dev
     volumes:
       - .:/app
     command: uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
+  # Development overrides for Domain Worker
   celery_domain_worker:
-    env_file: .env.dev
     volumes:
       - .:/app
 
+  # Development overrides for Scan Worker
   celery_scan_worker:
-    env_file: .env.dev
     volumes:
       - .:/app
 

@@ -1,35 +1,167 @@
 services:
-  api:
-    build: .
-    env_file: .env.prod
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
-    ports:
-      - "8000:8000"
-    depends_on:
-      - redis
-
-  celery_domain_worker:
-    build: .
-    env_file: .env.prod
-    command: celery -A app.worker worker -Q domain_verification_queue --loglevel=info --concurrency=2
-    depends_on:
-      - redis
-
-  celery_scan_worker:
-    build: .
-    env_file: .env.prod
-    command: celery -A app.worker worker -Q scan_queue --loglevel=info --concurrency=3
-    depends_on:
-      - redis
-
-  celery_beat:
-    build: .
-    env_file: .env.prod
-    command: celery -A app.worker beat --loglevel=info
-    depends_on:
-      - redis
-
+  # Redis - Celery Broker and Result Backend
   redis:
     image: redis:7-alpine
+    container_name: hyow-redis
     ports:
       - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - hyow-network
+    restart: unless-stopped
+
+  # OWASP ZAP - Security Scanner (Persistent Service)
+  zap:
+    image: ghcr.io/zaproxy/zaproxy:stable
+    container_name: hyow-zap
+    environment:
+      - ZAP_API_KEY=${ZAP_API_KEY:-15d12de6-553b-4af7-bd5c-22599f8876f2}
+    command: >
+      zap.sh -daemon -host 0.0.0.0 -port 8090
+      -Xmx6g
+      -config api.key=${ZAP_API_KEY:-15d12de6-553b-4af7-bd5c-22599f8876f2}
+      -config api.addrs.addr.name=.*
+      -config api.addrs.addr.regex=true
+      -config api.disablekey=false
+      -addonupdate
+      -addoninstall pscanrules
+      -addoninstall ascanrules
+    ports:
+      - "8090:8090"
+    volumes:
+      - zap_data:/home/zap/.ZAP
+    networks:
+      - hyow-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8090 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 8G
+        reservations:
+          memory: 3G
+
+  # Backend API Server
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hyow-backend:latest
+    container_name: hyow-api
+    env_file: .env
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app
+    depends_on:
+      redis:
+        condition: service_healthy
+      zap:
+        condition: service_healthy
+    networks:
+      - hyow-network
+    restart: unless-stopped
+
+  # Celery Worker - Domain Verification Queue
+  celery_domain_worker:
+    image: hyow-backend:latest
+    container_name: hyow-celery-domain
+    env_file: .env
+    command: celery -A app.core.celery_app worker -Q domain_verification_queue --loglevel=info --concurrency=2 -n domain_worker@%h -E
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - hyow-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 1G
+        reservations:
+          memory: 256M
+
+  # Celery Worker - Scan Queue
+  celery_scan_worker:
+    image: hyow-backend:latest
+    container_name: hyow-celery-scan
+    env_file: .env
+    command: celery -A app.core.celery_app worker -Q scan_queue --loglevel=info --concurrency=3 -n scan_worker@%h -E
+    depends_on:
+      redis:
+        condition: service_healthy
+      zap:
+        condition: service_healthy
+    networks:
+      - hyow-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1.5'
+          memory: 2G
+        reservations:
+          memory: 512M
+
+  # Celery Beat - Scheduled Tasks
+  celery_beat:
+    image: hyow-backend:latest
+    container_name: hyow-celery-beat
+    env_file: .env
+    command: celery -A app.core.celery_app beat --loglevel=info
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - celery_beat_data:/data
+    networks:
+      - hyow-network
+    restart: unless-stopped
+
+  # Flower - Celery Monitoring UI
+  flower:
+    image: hyow-backend:latest
+    container_name: hyow-flower
+    env_file: .env
+    environment:
+      - FLOWER_UNAUTHENTICATED_API=true
+    command: celery -A app.core.celery_app flower --port=5555 --persistent=True --broker_api=redis://redis:6379/0 --auto_refresh=True --refresh_interval=5000
+    ports:
+      - "5555:5555"
+    volumes:
+      - flower_data:/data
+    depends_on:
+      redis:
+        condition: service_healthy
+      celery_domain_worker:
+        condition: service_started
+      celery_scan_worker:
+        condition: service_started
+    networks:
+      - hyow-network
+    restart: unless-stopped
+
+networks:
+  hyow-network:
+    driver: bridge
+
+volumes:
+  redis_data:
+  postgres_data:
+  flower_data:
+  zap_data:
+  celery_beat_data:

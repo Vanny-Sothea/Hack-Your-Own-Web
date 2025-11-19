@@ -2,10 +2,11 @@ from datetime import datetime, timedelta
 from ..models.user import User, RefreshToken
 from ..core.security import get_password_hash, verify_password, revoke_token, revoke_session_token
 from sqlalchemy import select, delete
-from  ..utils.logger import logger
+from ..utils.logger import logger
 from fastapi.responses import JSONResponse
-import random, string
-from ..email.email import send_email_verification, send_email_verification_success, send_email_password_reset
+import random
+import string
+from ..core.email_helpers import send_email_verification, send_email_verification_success, send_email_password_reset
 from ..utils.generate_tokens import generate_tokens, generate_verification_token
 
 async def sign_up_crud(data, response, session):
@@ -39,7 +40,7 @@ async def sign_up_crud(data, response, session):
         await session.commit()
         
         # Combine first_name and last_name only if last_name exists
-        user_name = f"{data.first_name} {data.last_name}" if data.last_name else data.first_name
+        user_name = f"{data.first_name} {data.last_name}" if data.last_name is not None else data.first_name
         await send_email_verification(
             email=data.email,
             user_name=user_name,
@@ -89,7 +90,7 @@ async def verify_email_crud(response, data, user_cookie, session):
                 status_code=400,
                 content={"success": False, "message": "Invalid or expired verification code"}
             )
-        if datetime.utcnow() > user.verification_code_expires_at:
+        if user.verification_code_expires_at is not None and datetime.utcnow() > user.verification_code_expires_at:
             logger.warning("Verification code expired")
             return JSONResponse(
                 status_code=400,
@@ -104,7 +105,7 @@ async def verify_email_crud(response, data, user_cookie, session):
         await session.commit()
 
         # Combine first_name and last_name only if last_name exists
-        user_name = f"{user.first_name} {user.last_name}" if user.last_name else user.first_name
+        user_name = f"{user.first_name} {user.last_name}" if user.last_name is not None else user.first_name
         await send_email_verification_success(
             email=user.email,
             user_name=user_name,
@@ -152,7 +153,7 @@ async def resend_verification_code_crud(response, user_cookie, session):
         await session.commit()
 
         # Combine first_name and last_name only if last_name exists
-        user_name = f"{user.first_name} {user.last_name}" if user.last_name else user.first_name
+        user_name = f"{user.first_name} {user.last_name}" if user.last_name is not None else user.first_name
         await send_email_verification(
             email=user.email,
             user_name=user_name,
@@ -248,7 +249,7 @@ async def reset_password_request_crud(data, response, session):
         await session.commit()
 
         # Combine first_name and last_name only if last_name exists
-        user_name = f"{user.first_name} {user.last_name}" if user.last_name else user.first_name
+        user_name = f"{user.first_name} {user.last_name}" if user.last_name is not None else user.first_name
         await send_email_password_reset(
             email=user.email,
             user_name=user_name,
@@ -299,7 +300,7 @@ async def resend_reset_password_request_crud(response, user_cookie, session):
         await session.commit()
 
         # Combine first_name and last_name only if last_name exists
-        user_name = f"{user.first_name} {user.last_name}" if user.last_name else user.first_name
+        user_name = f"{user.first_name} {user.last_name}" if user.last_name is not None else user.first_name
         await send_email_password_reset(
             email=user.email,
             user_name=user_name,
@@ -349,7 +350,7 @@ async def reset_password_verify_crud(data, response, user_cookie, session):
                 status_code=400,
                 content={"success": False, "message": "Invalid or expired verification code"}
             )
-        if datetime.utcnow() > user.verification_code_expires_at:
+        if user.verification_code_expires_at is not None and datetime.utcnow() > user.verification_code_expires_at:
             logger.warning("Verification code expired")
             return JSONResponse(
                 status_code=400,
@@ -406,8 +407,9 @@ async def reset_password_crud(data, response, user_cookie, session):
         user.updated_at = datetime.utcnow()
 
         # Delete refresh tokens directly
+        # SQLAlchemy comparison creates ColumnElement[bool], not plain bool
         await session.execute(
-            delete(RefreshToken).where(RefreshToken.user_id == user.id)
+            delete(RefreshToken).where(RefreshToken.user_id == user.id)  # type: ignore[arg-type]
         )
 
         session.add(user)
@@ -430,14 +432,15 @@ async def reset_password_crud(data, response, user_cookie, session):
         )
 
 
-async def logout_crud(response, user, session):
+async def logout_crud(response, user_cookie, session):
     logger.info("Account logout endpoint hit")
     try:
-        user_id = user.id
+        user_id = int(user_cookie['user']['id'])
 
         # Delete refresh tokens directly
+        # SQLAlchemy comparison creates ColumnElement[bool], not plain bool
         await session.execute(
-            delete(RefreshToken).where(RefreshToken.user_id == user_id)
+            delete(RefreshToken).where(RefreshToken.user_id == user_id)  # type: ignore[arg-type]
         )
         await session.commit()
 

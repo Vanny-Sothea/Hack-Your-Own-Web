@@ -44,7 +44,6 @@ async def domain_registry_crud(data, user, session):
         new_domain = Site(
             domain=data.domain,
             verification_token=domain_verification_token,
-            # verification_token_expires_at=expires_at,
             is_verified=False,
             user_id=user.id
         )

@@ -1,17 +1,39 @@
-FROM python:3.12-slim
+FROM python:3.11-slim
 
+# Set working directory
 WORKDIR /app
 
-# Copy requirements first for caching
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    postgresql-client \
+    curl \
+    docker.io \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create non-root user for running services
+RUN groupadd -r appuser && useradd -r -g appuser -u 1000 appuser
+
+# Copy requirements
 COPY requirements.txt .
 
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy source code
+# Copy application code
 COPY . .
 
-# Expose port for FastAPI
+# Create logs directory
+RUN mkdir -p /app/logs
+
+# Change ownership of app directory
+RUN chown -R appuser:appuser /app
+
+# Switch to non-root user
+USER appuser
+
+# Expose port
 EXPOSE 8000
 
-# Command can be overridden by docker-compose
+# Default command (can be overridden in docker-compose)
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

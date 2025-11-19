@@ -4,33 +4,54 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent))
 
 from fastapi import FastAPI
-from app.api.v1 import auth_router, site_router, scan_router
+from fastapi.middleware.cors import CORSMiddleware
+from app.api.v1.auth import auth_router
+from app.api.v1.site import site_router
+from app.api.v1.scan import scan_router
+from app.api.v1.health import health_router
 from app.core.db import async_engine
 from sqlalchemy import text
-# from fastapi.middleware.cors import CORSMiddleware
 
 
 version = "v1"
 app = FastAPI(
+    title="Hack Your Own Web API",
+    description="Security scanning platform API with OWASP ZAP integration",
     version=version,
 )
 
-# origins = [
-#     "http://localhost:8000",  # your frontend
-#     "http://127.0.0.1:8000",
-# ]
+# CORS Configuration
+origins = [
+    "http://localhost:3000",  # React frontend
+    "http://127.0.0.1:3000",
+    "http://localhost:8000",  # API docs
+    "http://127.0.0.1:8000",
+]
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=origins,
-#     allow_credentials=True,  # important for cookies
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-app.include_router(auth_router, prefix=f"/api/{version}/auth", tags=["auth"])
-app.include_router(site_router, prefix=f"/api/{version}/site", tags=["site"])
-app.include_router(scan_router, prefix=f"/api/{version}/scan", tags=["scan"])
+# Include routers
+app.include_router(auth_router, prefix=f"/api/{version}/auth", tags=["Authentication"])
+app.include_router(site_router, prefix=f"/api/{version}/site", tags=["Site Management"])
+app.include_router(scan_router, prefix=f"/api/{version}/scans", tags=["Security Scans"])
+app.include_router(health_router, prefix=f"/api/{version}", tags=["Health"])
+
+
+@app.get("/")
+async def root():
+    return {
+        "message": "Hack Your Own Web API",
+        "version": version,
+        "docs": "/docs",
+        "health": f"/api/{version}/health",
+        "metrics": f"/api/{version}/metrics"
+    }
 
 @app.on_event("startup")
 async def startup_event():

@@ -1,37 +1,47 @@
 from celery import Celery
 from celery.schedules import crontab
-from .config import Config
+from kombu import Queue, Exchange
+from app.core.config import CeleryConfig
 
 celery_app = Celery(
-    "backend_tasks",
-    broker=Config.CELERY_BROKER_URL,
-    backend=Config.CELERY_RESULT_BACKEND,
+    "hack_your_own_web",
+    broker=CeleryConfig.CELERY_BROKER_URL,
+    backend=CeleryConfig.CELERY_RESULT_BACKEND,
     include=[
-        "app.tasks.domain_verification", 
-        "app.tasks.scan",
+        "app.tasks.scan_tasks",
+        "app.tasks.domain_verification",
         "app.tasks.domain_verification_scheduled"
     ]
 )
 
+# Define priority queues for scans
+default_exchange = Exchange('default', type='direct')
+
+# Celery configuration
 celery_app.conf.update(
-    task_track_started=True,
-    task_time_limit=30 * 60, #30 min max runtime
-    task_soft_time_limit=25 * 60, #25 min warning
-    broker_connection_retry_on_startup=True, #retry if broker is not available at startup
-    result_expires=3600, #1 hour expiration for results
-    task_acks_late=True, # Acknowledge tasks after they have been processed
-    worker_prefetch_multiplier=1, # Disable prefetching to ensure fair task distribution
-    task_serializer='json',
-    result_serializer='json',
-    accept_content=['json'],
-    timezone="Asia/Phnom_Penh",
+    task_serializer="json",
+    accept_content=["json"],
+    result_serializer="json",
+    timezone="UTC",
     enable_utc=True,
+    task_track_started=True,
+    task_time_limit=3600,  # 1 hour max per task
+    task_soft_time_limit=3300,  # 55 minutes soft limit
+    worker_prefetch_multiplier=1,
+    worker_max_tasks_per_child=100,
+    broker_connection_retry_on_startup=True,
+
+    # Define queues (FIFO - First In First Out)
+    task_queues=(
+        Queue('scan_queue', exchange=default_exchange, routing_key='scan_queue'),
+        Queue('domain_verification_queue', exchange=default_exchange, routing_key='domain_verification_queue'),
+    ),
 )
 
-# Route tasks to dedicated queues
+# Task routes for different queues (must match docker-compose worker -Q flag)
 celery_app.conf.task_routes = {
     'app.tasks.domain_verification.*': {'queue': 'domain_verification_queue'},
-    'app.tasks.scan.*': {'queue': 'scan_queue'},
+    'app.tasks.scan_tasks.*': {'queue': 'scan_queue'},
 }
 
 # Scheduled (beat) tasks
